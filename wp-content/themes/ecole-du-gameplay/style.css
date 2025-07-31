@@ -1,0 +1,104 @@
+/**
+ * Theme Name:     Ecole du Gameplay
+ * Author:         Arktall
+ * Template:       blogdata
+ * Text Domain:	   ecole-du-gameplay
+ * Description:    L\&#039;école du Gameplay c\&#039;est une émission tournée autour des jeux vidéo qui met en avant le gameplay, puis les autres aspects des jeux. Une émission hebdomadaire tous les mercredis à 12H. Ce site est là pour appuyer approfondir cet aspect avec des tests écrits et des posts de l\&#039;équipe souhaitant parler de jeux vidéo. N\&#039;hésitez pas à venir regarder l\&#039;émission en live sur la chaîne twitch de mk_rza (https://www.twitch.tv/mk_rza) afin d\&#039;interagir avec l\&#039;équipe de l\&#039;émission !
+ * Author URI:     http://Arktall
+ * Version:        1.0.0
+ * License:        Ecole du Gameplay
+ * License URI:    https://ecoledugameplay.fr
+ * Tags:           jeux vidéo, gameplay, école du gameplay, xbox, playstation, nintendo, console, PC, steam, twitch, jeux indépendants
+ */
+
+ :root {
+    --main-color: #e5b73f;
+    --dark-color: #1e1601;
+}
+
+a {
+    color: var(--main-color);
+}
+
+a:focus, button:focus {
+    outline: 1px dotted var(--main-color);
+}
+
+a.btn, button.btn, .btn-theme, .more-link, button {
+    background-color: var(--main-color);
+    color: #fff;
+    border-color: var(--main-color);
+}
+
+.btn-theme:hover, .btn-theme:focus, .more-link:hover, .more-link:focus, .btn:hover, button.btn:hover, button[type=submit]:hover {
+    background: linear-gradient(90deg, var(--dark-color) 1.18%, var(--main-color) 74.96%);
+    color: #fff;
+    border-color: var(--main-color);
+}
+
+.bs-blog-post .title a:hover, .bs-blog-post .title a:focus, .bs-blog-post .title a:hover, .bs-blog-post .title a:focus {
+    color: var(--main-color);
+}
+
+.bs-blog-category.one a:hover {
+    border-color: var(--main-color);
+		text-shadow: 2px 2px 2px #000;
+}
+
+.bs-blog-category a {
+    border-color: var(--main-color);
+}
+
+.bs-blog-category a:hover, .bs-blog-category a:focus {
+    color: #fff;
+    background: linear-gradient(90deg, var(--dark-color) 1.18%, var(--main-color) 74.96%);
+}
+
+
+.bs .swiper-button-prev:hover, .bs .swiper-button-next:hover {
+    background: var(--main-color);
+    color: #fff;
+}
+
+.bs_upscr {
+    background: var(--main-color);
+    border-color: var(--main-color);
+    color: #fff !important;
+}
+
+.bs_upscr:hover, .bs_upscr:focus {
+    background: linear-gradient(90deg, var(--dark-color) 1.18%, var(--main-color) 74.96%);
+    color: #fff;
+}
+
+.bs-blog-meta a:hover, .bs-blog-meta a:focus, .tag-links a:hover {
+    color: var(--main-color);
+}
+
+.navbar-wp nav li a:hover {
+    color: var(--main-color);
+}
+
+.navbar-wp .bs-social li i {
+    color: #212121;
+
+    /* 
+
+    POUR LE FORMAT MOBILE
+
+    background-color: white;
+    box-shadow: 0px 4px 10px 0 #00000020;
+
+    */
+}
+
+.wp-block-quote {
+    border-color: var(--main-color);
+}
+blockquote::before {
+    color: var(--main-color);
+}
+
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(135deg, var(--main-color) 1.18%, var(--main-color) 74.96%) ;
+}

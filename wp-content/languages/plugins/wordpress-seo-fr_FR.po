@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Yoast SEO &#8211; Advanced SEO with real-time guidance and built-in AI - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-06-14 15:06:56+0000\n"
+"PO-Revision-Date: 2025-07-01 09:22:00+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -110,7 +110,7 @@ msgid "30% OFF - BLACK FRIDAY"
 msgstr "30 % DE RÉDUCTION – BLACK FRIDAY"
 
 #. translators: %1$s expands to opening span, %2$s expands to closing span
-#: admin/views/licenses.php:138
+#: admin/views/licenses.php:74
 msgid "%1$s30%% OFF%2$s"
 msgstr "%1$s30%% de réduction%2$s"
 
@@ -225,7 +225,7 @@ msgstr "FAQ Yoast"
 msgid "X username (without @)"
 msgstr "Identifiant X (sans @)"
 
-#: src/presenters/admin/sidebar-presenter.php:98 js/dist/block-editor.js:27
+#: src/presenters/admin/sidebar-presenter.php:94 js/dist/block-editor.js:27
 #: js/dist/classic-editor.js:12 js/dist/elementor.js:12
 #: js/dist/externals-components.js:199 js/dist/general-page.js:14
 #: js/dist/integrations-page.js:48 js/dist/introductions.js:12
@@ -234,16 +234,7 @@ msgstr "Identifiant X (sans @)"
 msgid "30-day money back guarantee."
 msgstr "Garantie satisfait-remboursé de 30 jours."
 
-#: src/presenters/admin/sidebar-presenter.php:94 js/dist/block-editor.js:27
-#: js/dist/classic-editor.js:12 js/dist/elementor.js:12
-#: js/dist/externals-components.js:199 js/dist/general-page.js:14
-#: js/dist/integrations-page.js:48 js/dist/introductions.js:12
-#: js/dist/new-settings.js:14 js/dist/post-edit.js:12 js/dist/support.js:14
-#: js/dist/term-edit.js:12
-msgid "Only $/€/£99 per year (ex VAT)"
-msgstr "Seulement $/€/£99 par an (hors TVA)"
-
-#: admin/views/licenses.php:378
+#: admin/views/licenses.php:315
 msgid "Only $/€/£229 per year (ex VAT). Save over 40% with this subscription!"
 msgstr "Seulement $/€/£229 par an (hors TVA). Économisez plus de 40% avec cet abonnement !"
 
@@ -254,53 +245,29 @@ msgstr "La classe %1$s ne doit pas être instanciée avant que le global %2$s ne
 
 #. translators: %1$s expands to a span opening tag, %2$s expands to a span
 #. closing tag, %3$s expands to Yoast SEO
-#: admin/views/licenses.php:296
+#: admin/views/licenses.php:233
 msgid "%1$sOutrank your competitors even further%2$s with these %3$s plugins"
 msgstr "%1$sSurclassez encore plus vos concurrents%2$s avec ces extensions %3$s"
 
-#: admin/views/licenses.php:276 admin/views/licenses.php:383
+#: admin/views/licenses.php:212 admin/views/licenses.php:320
 msgid "Explore now"
 msgstr "Explorer maintenant"
 
-#: admin/views/licenses.php:155
+#: admin/views/licenses.php:91
 msgid "Rank higher in search results"
 msgstr "Meilleur classement dans les résultats de recherche"
 
-#: admin/views/licenses.php:90
+#: admin/views/licenses.php:47
 msgid "Turn more visitors into customers!"
 msgstr "Transformez plus de visiteurs en clients !"
 
-#: admin/views/licenses.php:86
+#: admin/views/licenses.php:43
 msgid "Increase Google clicks with rich results"
 msgstr "Augmentez les clics sur Google avec des résultats enrichis"
 
-#: admin/views/licenses.php:85
+#: admin/views/licenses.php:42
 msgid "Write product pages that rank using the SEO analysis"
 msgstr "Rédigez des pages produits bien classées grâce à l’analyse SEO."
-
-#: admin/views/licenses.php:69
-msgid "Get XML sitemaps"
-msgstr "Obtenir des plans de site XML"
-
-#: admin/views/licenses.php:55
-msgid "Optimize your video previews & thumbnails"
-msgstr "Optimisez les aperçus et les miniatures de vos vidéos"
-
-#: admin/views/licenses.php:53
-msgid "Make sure your videos load quickly for users"
-msgstr "Assurez-vous que vos vidéos se chargent rapidement pour les utilisateurs"
-
-#: admin/views/licenses.php:52
-msgid "Automatically get technical SEO best practices for video content"
-msgstr "Obtenez automatiquement les meilleures pratiques SEO techniques pour le contenu vidéo"
-
-#: admin/views/licenses.php:48 admin/views/licenses.php:113
-msgid "Drive more views to your videos"
-msgstr "Augmentez les vues de vos vidéos"
-
-#: admin/views/licenses.php:34
-msgid "Stand out for local searches"
-msgstr "Démarquez-vous dans les recherches locales"
 
 #. translators: %s expands to Yoast SEO Premium
 #. translators: %s expands to "Yoast SEO" Premium
@@ -315,7 +282,7 @@ msgstr "Explorer %s maintenant !"
 
 #. translators: %1$s expands to a strong opening tag, %2$s expands to a strong
 #. closing tag.
-#: admin/class-premium-upsell-admin-block.php:88 admin/views/licenses.php:216
+#: admin/class-premium-upsell-admin-block.php:88 admin/views/licenses.php:152
 #: js/dist/block-editor.js:33 js/dist/classic-editor.js:18
 #: js/dist/editor-modules.js:180 js/dist/elementor.js:18
 #: js/dist/externals-components.js:148 js/dist/general-page.js:21
@@ -327,7 +294,7 @@ msgstr "%1$sSupport 24/7%2$s : Également le soir et le weekend."
 
 #. translators: %1$s expands to a strong opening tag, %2$s expands to a strong
 #. closing tag.
-#: admin/class-premium-upsell-admin-block.php:82 admin/views/licenses.php:206
+#: admin/class-premium-upsell-admin-block.php:82 admin/views/licenses.php:142
 #: js/dist/block-editor.js:32 js/dist/classic-editor.js:17
 #: js/dist/editor-modules.js:179 js/dist/elementor.js:17
 #: js/dist/externals-components.js:147 js/dist/general-page.js:20
@@ -339,7 +306,7 @@ msgstr "%1$sDes aperçus sociaux attrayants%2$s sur lesquels les gens ont envie 
 
 #. translators: %1$s expands to a strong opening tag, %2$s expands to a strong
 #. closing tag.
-#: admin/class-premium-upsell-admin-block.php:76 admin/views/licenses.php:196
+#: admin/class-premium-upsell-admin-block.php:76 admin/views/licenses.php:132
 #: js/dist/block-editor.js:31 js/dist/classic-editor.js:16
 #: js/dist/editor-modules.js:178 js/dist/elementor.js:16
 #: js/dist/externals-components.js:146 js/dist/general-page.js:19
@@ -351,7 +318,7 @@ msgstr "%1$sPlus de liens cassés%2$s : Gestionnaire de redirection automatique
 
 #. translators: %1$s expands to a strong opening tag, %2$s expands to a strong
 #. closing tag.
-#: admin/class-premium-upsell-admin-block.php:70 admin/views/licenses.php:186
+#: admin/class-premium-upsell-admin-block.php:70 admin/views/licenses.php:122
 #: js/dist/block-editor.js:30 js/dist/classic-editor.js:15
 #: js/dist/editor-modules.js:177 js/dist/elementor.js:15
 #: js/dist/externals-components.js:145 js/dist/general-page.js:18
@@ -363,7 +330,7 @@ msgstr "Suggestions de liens internes %1$ssuper rapides%2$s."
 
 #. translators: %1$s expands to a strong opening tag, %2$s expands to a strong
 #. closing tag.
-#: admin/class-premium-upsell-admin-block.php:64 admin/views/licenses.php:176
+#: admin/class-premium-upsell-admin-block.php:64 admin/views/licenses.php:112
 #: js/dist/block-editor.js:29 js/dist/classic-editor.js:14
 #: js/dist/editor-modules.js:176 js/dist/elementor.js:14
 #: js/dist/externals-components.js:144 js/dist/general-page.js:17
@@ -375,7 +342,7 @@ msgstr "%1$sMots-clés multiples%2$s : Obtenez un meilleur classement pour plus
 
 #. translators: %1$s expands to a strong opening tag, %2$s expands to a strong
 #. closing tag.
-#: admin/class-premium-upsell-admin-block.php:58 admin/views/licenses.php:166
+#: admin/class-premium-upsell-admin-block.php:58 admin/views/licenses.php:102
 #: js/dist/block-editor.js:28 js/dist/classic-editor.js:13
 #: js/dist/editor-modules.js:175 js/dist/elementor.js:13
 #: js/dist/externals-components.js:143 js/dist/general-page.js:16
@@ -555,22 +522,6 @@ msgstr "%1$s : paramètre d’URL non-enregistré retiré. Consultez %2$s"
 msgid "%1$s: redirect utm variables to #"
 msgstr "%1$s : rediriger vers les variables utm vers #"
 
-#: admin/views/licenses.php:41
-msgid "Optimize your business for multiple locations"
-msgstr "Optimisez votre activité pour plusieurs emplacements"
-
-#: admin/views/licenses.php:40
-msgid "Easily add maps, address finders, and opening hours to your content"
-msgstr "Ajoutez facilement des cartes, des adresses et des heures d’ouverture à votre contenu"
-
-#: admin/views/licenses.php:39
-msgid "Automatically get technical SEO best practices for local businesses"
-msgstr "Obtenez automatiquement les bonnes pratiques SEO pour les entreprises locales"
-
-#: admin/views/licenses.php:38
-msgid "Attract more customers to your site and physical store"
-msgstr "Attirez plus de clients vers votre site et votre boutique physique"
-
 #: src/presenters/admin/indexing-notification-presenter.php:93
 msgid "It looks like you've enabled media pages. We recommend that you help us to re-analyze your site by running the SEO data optimization."
 msgstr "Il semblerait que vous ayez activé les pages de média. Nous vous recommandons de nous aider à réanalyser votre site en lançant l’optimisation des données SEO."
@@ -642,52 +593,17 @@ msgstr "Expression clé principale : "
 msgid "not set"
 msgstr "non défini"
 
-#: admin/views/licenses.php:284
+#: admin/views/licenses.php:220
 msgid "With a 30-day money-back guarantee. No questions asked."
 msgstr "Avec une garantie satisfait-remboursé de 30 jours. Aucune question posée."
 
-#: admin/views/licenses.php:112
-msgid "Reach new customers who live near your business"
-msgstr "Atteignez de nouveaux clients qui vivent près de votre entreprise"
-
-#: admin/views/licenses.php:111
-msgid "Get all 5 Yoast plugins for WordPress at a big discount"
-msgstr "Obtenez les 5 extensions Yoast pour WordPress avec une grosse réduction"
-
-#: admin/views/licenses.php:107
-msgid "Cover all your SEO bases"
-msgstr "Couvre toutes vos bases SEO"
-
-#. translators: used in phrases such as "More information about all the Yoast
-#. plugins"
-#. translators: used in phrases such as "Buy all the Yoast plugins"
-#: admin/views/licenses.php:106 admin/views/licenses.php:119
-msgid "all the Yoast plugins"
-msgstr "toutes les extensions de Yoast"
-
-#: admin/views/licenses.php:87
+#: admin/views/licenses.php:44
 msgid "Add global identifiers for variable products"
 msgstr "Ajoutez des identifiants globaux pour les produits variables"
 
-#: admin/views/licenses.php:80 admin/views/licenses.php:115
+#: admin/views/licenses.php:37
 msgid "Drive more traffic to your online store"
 msgstr "Générez plus de trafic vers votre boutique en ligne"
-
-#: admin/views/licenses.php:68
-msgid "Add all necessary schema.org markup"
-msgstr "Ajoute le balisage schema.org nécessaire"
-
-#: admin/views/licenses.php:67
-msgid "Ping Google on the publication of a new post"
-msgstr "Notifiez Google de la sortie de nouvelles publications"
-
-#: admin/views/licenses.php:62 admin/views/licenses.php:114
-msgid "Rank higher in Google's news carousel"
-msgstr "Soyez plus visible dans le carousel de Google News"
-
-#: admin/views/licenses.php:54
-msgid "Make your videos responsive for all screen sizes"
-msgstr "Rendez vos vidéos responsive pour tous les appareils"
 
 #: src/presenters/admin/indexing-notification-presenter.php:90
 msgid "We need to re-analyze some of your SEO data because of a change in the visibility of your taxonomies. Please help us do that by running the SEO data optimization."
@@ -766,7 +682,7 @@ msgstr "Rediriger les belles URL des pages de recherche vers leur format brut"
 msgid "These are expert features, so make sure you know what you're doing before removing the parameters. %1$sRead more about how your site can be affected%2$s."
 msgstr "Ce sont des fonctionnalités pour les experts donc assurez-vous de savoir ce que vous faites avant de retirer ces paramètres. %1$sEn savoir plus sur l’impact potentiel sur votre site%2$s."
 
-#: src/presenters/admin/sidebar-presenter.php:105 js/dist/block-editor.js:27
+#: src/presenters/admin/sidebar-presenter.php:101 js/dist/block-editor.js:27
 #: js/dist/classic-editor.js:12 js/dist/elementor.js:12
 #: js/dist/externals-components.js:199 js/dist/general-page.js:14
 #: js/dist/integrations-page.js:48 js/dist/introductions.js:12
@@ -1884,24 +1800,24 @@ msgstr "Le navigateur que vous utilisez actuellement est malheureusement obsolè
 
 #. translators: %1$s expands to Yoast SEO academy
 #. translators: %1$s expands to "Yoast SEO academy".
-#: src/presenters/admin/sidebar-presenter.php:141 js/dist/general-page.js:3
+#: src/presenters/admin/sidebar-presenter.php:137 js/dist/general-page.js:3
 #: js/dist/new-settings.js:3 js/dist/support.js:3
 msgid "Check out %1$s"
 msgstr "Jetez un œil à %1$s"
 
-#: src/presenters/admin/sidebar-presenter.php:134 js/dist/general-page.js:2
+#: src/presenters/admin/sidebar-presenter.php:130 js/dist/general-page.js:2
 #: js/dist/new-settings.js:2 js/dist/support.js:2
 msgid "We have both free and premium online courses to learn everything you need to know about SEO."
 msgstr "Nous avons des formations gratuites et payantes pour vous apprendre le référencement."
 
 #. translators: %1$s expands to Yoast SEO academy, which is a clickable link.
 #. translators: %1$s expands to "Yoast SEO" academy, which is a clickable link.
-#: src/presenters/admin/sidebar-presenter.php:132 js/dist/general-page.js:2
+#: src/presenters/admin/sidebar-presenter.php:128 js/dist/general-page.js:2
 #: js/dist/new-settings.js:2 js/dist/support.js:2
 msgid "Want to learn SEO from Team Yoast? Check out our %1$s!"
 msgstr "Vous souhaitez apprendre le référencement avec l’équipe de Yoast ? Jetez un œil à notre %1$s !"
 
-#: src/presenters/admin/sidebar-presenter.php:124 js/dist/general-page.js:2
+#: src/presenters/admin/sidebar-presenter.php:120 js/dist/general-page.js:2
 #: js/dist/new-settings.js:2 js/dist/support.js:2
 msgid "Learn SEO"
 msgstr "Apprenez le SEO"
@@ -1962,7 +1878,7 @@ msgstr[0] "Le formulaire contient %1$s erreur. %2$s"
 msgstr[1] "Le formulaire contient %1$s erreurs. %2$s"
 
 #. translators: %s expands to the extension title
-#: admin/views/licenses.php:249 admin/views/licenses.php:353
+#: admin/views/licenses.php:185 admin/views/licenses.php:290
 msgid "Activate %s for your site on MyYoast"
 msgstr "Activez %s pour votre site sur MyYoast"
 
@@ -2777,7 +2693,7 @@ msgid "Old Configuration Wizard"
 msgstr "Ancien assistant de configuration"
 
 #. translators: %s expands to the extension title
-#: admin/views/licenses.php:236 admin/views/licenses.php:339
+#: admin/views/licenses.php:172 admin/views/licenses.php:276
 msgid "Manage your %s subscription on MyYoast"
 msgstr "Gérez votre abonnement à %s sur MyYoast"
 
@@ -2790,7 +2706,7 @@ msgstr "Marquez les contenus les plus importants des %1$s comme « contenus pil
 #. translators: Hidden accessibility text.
 #: admin/class-admin-utils.php:79 admin/class-premium-popup.php:83
 #: admin/class-premium-upsell-admin-block.php:102
-#: admin/class-yoast-form.php:935 admin/views/licenses.php:130
+#: admin/class-yoast-form.php:935 admin/views/licenses.php:66
 #: admin/watchers/class-slug-change-watcher.php:232
 #: src/integrations/admin/workouts-integration.php:215
 #: src/integrations/admin/workouts-integration.php:245
@@ -2846,11 +2762,11 @@ msgstr "Lisez plus d’informations comme celle-ci sur notre blog SEO"
 msgid "Readability: %s"
 msgstr "Lisibilité : %s"
 
-#: admin/views/licenses.php:244 admin/views/licenses.php:348
+#: admin/views/licenses.php:180 admin/views/licenses.php:285
 msgid "Not activated"
 msgstr "Non activé"
 
-#: admin/views/licenses.php:231 admin/views/licenses.php:334
+#: admin/views/licenses.php:167 admin/views/licenses.php:271
 msgid "Activated"
 msgstr "Activé"
 
@@ -3090,18 +3006,14 @@ msgstr "Navigation dans la liste des publications"
 msgid "Filter posts list"
 msgstr "Filtrer la liste des publications"
 
-#: admin/views/licenses.php:225 admin/views/licenses.php:328
+#: admin/views/licenses.php:161 admin/views/licenses.php:265
 msgid "Installed"
 msgstr "Installée"
 
 #. translators: %1$s expands to Yoast SEO, %2$s expands to WooCommerce
-#: admin/views/licenses.php:89
+#: admin/views/licenses.php:46
 msgid "Seamless integration between %1$s and %2$s"
 msgstr "Intégration transparente entre %1$s et %2$s"
-
-#: admin/views/licenses.php:66
-msgid "Optimize your site for Google News"
-msgstr "Optimisez votre site pour Google Actualités."
 
 #. translators: Hidden accessibility text; %s: post title.
 #: admin/class-bulk-editor-list-table.php:843
@@ -3185,7 +3097,7 @@ msgstr "Nous avons détecté les problèmes suivants qui affectent le référenc
 
 #: admin/views/partial-notifications-errors.php:20
 #: js/dist/editor-modules.js:181 js/dist/externals-components.js:188
-#: js/dist/externals/analysisReport.js:41 js/dist/general-page.js:36
+#: js/dist/externals/analysisReport.js:39 js/dist/general-page.js:36
 msgid "Problems"
 msgstr "Problèmes"
 
@@ -3225,7 +3137,7 @@ msgstr "Remplacé par la catégorie principale de l’article/page"
 #. translators: %s expands to the product name, e.g. "News SEO" or "all the
 #. Yoast Plugins"
 #. translators: 1: Yoast WooCommerce SEO
-#: admin/views/licenses.php:265 admin/views/licenses.php:367
+#: admin/views/licenses.php:201 admin/views/licenses.php:304
 #: js/dist/integrations-page.js:12
 msgid "Buy %s"
 msgstr "Achetez %s"
@@ -3778,24 +3690,24 @@ msgid "Take note:"
 msgstr "À savoir :"
 
 #. translators: %1$s expands to Yoast SEO.
-#: admin/views/licenses.php:126
+#: admin/views/licenses.php:62
 msgid "%1$s Extensions"
 msgstr "Extensions de %1$s"
 
 #. translators: %1$s expands to Yoast SEO
-#: admin/class-plugin-availability.php:89 admin/views/licenses.php:82
+#: admin/class-plugin-availability.php:89 admin/views/licenses.php:39
 msgid "Seamlessly integrate WooCommerce with %1$s and get extra features!"
 msgstr "Intégrez WooCommerce et %1$s et obtenez des fonctionnalités supplémentaires !"
 
-#: admin/class-plugin-availability.php:77 admin/views/licenses.php:35
+#: admin/class-plugin-availability.php:77
 msgid "Rank better locally and in Google Maps, without breaking a sweat!"
 msgstr "Améliorez votre classement localement dans Google Maps, sans verser une goutte de sueur !"
 
-#: admin/class-plugin-availability.php:67 admin/views/licenses.php:63
+#: admin/class-plugin-availability.php:67
 msgid "Are you in Google News? Increase your traffic from Google News by optimizing for it!"
 msgstr "Êtes-vous sur Google Actualités ? Augmentez votre trafic de Google News grâce à son optimisation !"
 
-#: admin/class-plugin-availability.php:57 admin/views/licenses.php:49
+#: admin/class-plugin-availability.php:57
 msgid "Optimize your videos to show them off in search results and get more clicks!"
 msgstr "Optimisez vos vidéos pour qu’elles apparaissent dans les résultats des recherches et obtenir plus de clics !"
 
