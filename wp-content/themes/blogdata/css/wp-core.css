@@ -413,6 +413,7 @@ blockquote.right {
 
 ol.wp-block-latest-comments {
     padding: 0;
+    margin-bottom: 0;
 }
 .rtl ol.wp-block-latest-comments {
     padding: 0;

@@ -124,6 +124,9 @@
                     <div class="navbar-main">
                         <div class="container">
                             <div class="collapse navbar-collapse" id="navbarCollapse">
+                                <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+                                    <img src="wp-content/themes/edg-theme/edg-logo-abbreg.png" alt="EDG Logo" class="edg-navbar-logo" />
+                                </a>
                                 <div id="site-navigation" class="main-navigation<?php echo ($newscard_settings['newscard_nav_uppercase'] == 1) ? " nav-uppercase" : ""; ?>" role="navigation">
                                     <?php
                                     if (has_nav_menu('primary')) {
@@ -148,6 +151,10 @@
                                         <?php echo esc_html(newscard_social_profiles()); ?>
                                     </div><!-- .social-profile -->
                                 <?php } ?>
+                                <!-- <p>difhrgjfbdk</p> -->
+                                <a href="https://www.patreon.com/MK_RZA" target="_blank" class="patreon">
+                                    <img src="wp-content/themes/edg-theme/patreon_logo.png" alt="Patreon" class="patreon-logo" />
+                                </a>
                                 <span class="search-toggle"></span>
                             </div><!-- .nav-search -->
                         </div><!-- .container -->

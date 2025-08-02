@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - OceanWP package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-02-23 14:10:10+0000\n"
+"PO-Revision-Date: 2025-07-27 07:36:02+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2451,6 +2451,18 @@ msgstr "Aucun 'effet"
 msgid "Ready to publish your first post? %1$sGet started here%2$s."
 msgstr "Prêt à publier votre premier article ? %1$sCommencez ici%2$s."
 
+#: inc/customizer/options/seo.php:15
+msgid "Enable Schema Markup"
+msgstr "Activer le schéma de marquage"
+
+#: inc/customizer/options/header.php:5221
+msgid "Breakpoints"
+msgstr "Points de rupture"
+
+#: inc/walker/init.php:71
+msgid "Template"
+msgstr "Modèle"
+
 #: inc/customizer/options/blog.php:3126 inc/customizer/options/blog.php:3127
 #: inc/customizer/options/blog.php:3164 inc/customizer/options/blog.php:3165
 #: inc/customizer/options/edd.php:2400 inc/customizer/options/edd.php:2401
@@ -2460,10 +2472,6 @@ msgstr "Prêt à publier votre premier article ? %1$sCommencez ici%2$s."
 msgid "Tag"
 msgstr "Étiquette"
 
-#: inc/walker/init.php:71
-msgid "Template"
-msgstr "Modèle"
-
 #: inc/customizer/options/footer-widget.php:268
 #: inc/customizer/options/header.php:113 inc/customizer/options/header.php:4588
 #: inc/customizer/options/header.php:5165
@@ -2471,14 +2479,6 @@ msgstr "Modèle"
 #: inc/customizer/options/topbar.php:279 inc/customizer/options/topbar.php:621
 msgid "Select Template"
 msgstr "Sélectionner un modèle"
-
-#: inc/customizer/options/seo.php:15
-msgid "Enable Schema Markup"
-msgstr "Activer le schéma de marquage"
-
-#: inc/customizer/options/header.php:5221
-msgid "Breakpoints"
-msgstr "Points de rupture"
 
 #: inc/customizer/options/edd.php:2384
 msgid "Next/Prev Taxonomy"
@@ -2830,6 +2830,22 @@ msgstr "Après la colonne latérale"
 msgid "Before Sidebar"
 msgstr "Avant la colonne latérale"
 
+#: inc/customizer/options/blog.php:221 inc/customizer/options/blog.php:222
+#: inc/customizer/options/blog.php:2274 inc/customizer/options/blog.php:2275
+#: inc/customizer/options/page-settings.php:276
+#: inc/customizer/options/page-settings.php:277
+#: inc/third/class-beaver-themer.php:132
+msgid "After Content"
+msgstr "Après le contenu"
+
+#: inc/customizer/options/blog.php:226 inc/customizer/options/blog.php:227
+#: inc/customizer/options/blog.php:2279 inc/customizer/options/blog.php:2280
+#: inc/customizer/options/page-settings.php:281
+#: inc/customizer/options/page-settings.php:282
+#: inc/third/class-beaver-themer.php:129
+msgid "Before Content"
+msgstr "Avant le contenu"
+
 #: inc/third/class-beaver-themer.php:150
 msgid "After Footer"
 msgstr "Après le pied de page"
@@ -2853,22 +2869,6 @@ msgstr "Après la page"
 #: inc/third/class-beaver-themer.php:95
 msgid "Before Page"
 msgstr "Avant la page"
-
-#: inc/customizer/options/blog.php:221 inc/customizer/options/blog.php:222
-#: inc/customizer/options/blog.php:2274 inc/customizer/options/blog.php:2275
-#: inc/customizer/options/page-settings.php:276
-#: inc/customizer/options/page-settings.php:277
-#: inc/third/class-beaver-themer.php:132
-msgid "After Content"
-msgstr "Après le contenu"
-
-#: inc/customizer/options/blog.php:226 inc/customizer/options/blog.php:227
-#: inc/customizer/options/blog.php:2279 inc/customizer/options/blog.php:2280
-#: inc/customizer/options/page-settings.php:281
-#: inc/customizer/options/page-settings.php:282
-#: inc/third/class-beaver-themer.php:129
-msgid "Before Content"
-msgstr "Avant le contenu"
 
 #: inc/third/class-beaver-themer.php:123
 msgid "After Page Header"
@@ -4196,11 +4196,6 @@ msgstr "Couleur de bordure supérieure/inférieure"
 msgid "Number of Products Color"
 msgstr "Couleur du nombre de produits"
 
-#: inc/customizer/options/edd.php:1816
-#: inc/customizer/options/woocommerce.php:3500
-msgid "Category Color"
-msgstr "Couleur de catégorie"
-
 #: inc/customizer/options/edd.php:1854 inc/customizer/options/edd.php:2416
 #: inc/customizer/options/lifterlms.php:1182
 #: inc/customizer/options/lifterlms.php:1289
@@ -4968,6 +4963,21 @@ msgstr "Tous les titrages"
 msgid "Remove Link Color"
 msgstr "Couleur du lien Supprimer"
 
+#: inc/customizer/options/woocommerce.php:1309
+#: inc/customizer/options/woocommerce.php:6424
+msgid "Quantity Color"
+msgstr "Couleur de quantité"
+
+#: inc/customizer/options/edd.php:833
+#: inc/customizer/options/woocommerce.php:1555
+msgid "Checkout Button Background"
+msgstr "Arrière-plan du bouton de paiement"
+
+#: inc/customizer/options/edd.php:870
+#: inc/customizer/options/woocommerce.php:1592
+msgid "Checkout Button Color"
+msgstr "Couleur bouton de paiement"
+
 #: inc/customizer/options/blog.php:1109 inc/customizer/options/blog.php:1273
 #: inc/customizer/options/blog.php:1434 inc/customizer/options/blog.php:1595
 #: inc/customizer/options/blog.php:3329 inc/customizer/options/blog.php:3492
@@ -5013,18 +5023,6 @@ msgstr "Couleur du lien Supprimer"
 #: inc/customizer/assets/dist/index.js:1
 msgid "Font Family"
 msgstr "Famille de police"
-
-#: inc/customizer/options/woocommerce.php:7704
-msgid "Up-Sells Count"
-msgstr "Nombre des meilleures ventes"
-
-#: inc/customizer/options/woocommerce.php:7806
-msgid "Related Items Count"
-msgstr "Nombre d’éléments similaires"
-
-#: inc/customizer/options/woocommerce.php:7832
-msgid "Related Products Columns"
-msgstr "Colonnes de produits similaires"
 
 #: inc/customizer/options/woocommerce.php:5909
 msgid "Product Meta"
@@ -5327,6 +5325,22 @@ msgstr "(modifier)"
 msgid "edit"
 msgstr "modifier"
 
+#: inc/helpers.php:3594 inc/helpers.php:3643 inc/helpers.php:3674
+#: inc/woocommerce/woocommerce-config.php:636
+#: inc/woocommerce/woocommerce-config.php:666
+msgid "Newer Posts"
+msgstr "Articles plus récents"
+
+#: inc/helpers.php:3597 inc/helpers.php:3644 inc/helpers.php:3675
+#: inc/woocommerce/woocommerce-config.php:637
+#: inc/woocommerce/woocommerce-config.php:667
+msgid "Older Posts"
+msgstr "Articles plus anciens"
+
+#: inc/helpers.php:4240 inc/oceanwp-strings.php:87
+msgid "Email"
+msgstr "E-mail"
+
 #: inc/customizer/options/blog.php:1203 inc/customizer/options/blog.php:1211
 #: inc/customizer/options/blog.php:1218 inc/customizer/options/blog.php:1365
 #: inc/customizer/options/blog.php:1372 inc/customizer/options/blog.php:1379
@@ -5456,21 +5470,6 @@ msgstr "modifier"
 msgid "Line Height"
 msgstr "Hauteur de ligne"
 
-#: inc/customizer/options/woocommerce.php:1309
-#: inc/customizer/options/woocommerce.php:6424
-msgid "Quantity Color"
-msgstr "Couleur de quantité"
-
-#: inc/customizer/options/edd.php:833
-#: inc/customizer/options/woocommerce.php:1555
-msgid "Checkout Button Background"
-msgstr "Arrière-plan du bouton de paiement"
-
-#: inc/customizer/options/edd.php:870
-#: inc/customizer/options/woocommerce.php:1592
-msgid "Checkout Button Color"
-msgstr "Couleur bouton de paiement"
-
 #: inc/customizer/options/woocommerce.php:4665
 msgid "Grid/List Buttons"
 msgstr "Boutons de grille/liste"
@@ -5479,21 +5478,17 @@ msgstr "Boutons de grille/liste"
 msgid "Shop Result Count"
 msgstr "Nombre de résultats de boutique"
 
-#: inc/helpers.php:3594 inc/helpers.php:3643 inc/helpers.php:3674
-#: inc/woocommerce/woocommerce-config.php:636
-#: inc/woocommerce/woocommerce-config.php:666
-msgid "Newer Posts"
-msgstr "Articles plus récents"
+#: inc/customizer/options/woocommerce.php:7704
+msgid "Up-Sells Count"
+msgstr "Nombre des meilleures ventes"
 
-#: inc/helpers.php:3597 inc/helpers.php:3644 inc/helpers.php:3675
-#: inc/woocommerce/woocommerce-config.php:637
-#: inc/woocommerce/woocommerce-config.php:667
-msgid "Older Posts"
-msgstr "Articles plus anciens"
+#: inc/customizer/options/woocommerce.php:7806
+msgid "Related Items Count"
+msgstr "Nombre d’éléments similaires"
 
-#: inc/helpers.php:4240 inc/oceanwp-strings.php:87
-msgid "Email"
-msgstr "E-mail"
+#: inc/customizer/options/woocommerce.php:7832
+msgid "Related Products Columns"
+msgstr "Colonnes de produits similaires"
 
 #: inc/customizer/options/woocommerce.php:4768
 msgid "Active"
@@ -5540,70 +5535,6 @@ msgstr "Colonne latérale gauche"
 #: inc/third/class-lifterlms.php:308
 msgid "Right Sidebar"
 msgstr "Colonne latérale droite"
-
-#: inc/breadcrumbs.php:1163
-msgctxt "weekly archives date format"
-msgid "W"
-msgstr "S"
-
-#: inc/breadcrumbs.php:1133 inc/breadcrumbs.php:1188 inc/breadcrumbs.php:1563
-msgctxt "monthly archives date format"
-msgid "F"
-msgstr "M"
-
-#: inc/breadcrumbs.php:1132 inc/breadcrumbs.php:1162 inc/breadcrumbs.php:1187
-#: inc/breadcrumbs.php:1212 inc/breadcrumbs.php:1559
-msgctxt "yearly archives date format"
-msgid "Y"
-msgstr "A"
-
-#: inc/customizer/options/woocommerce.php:2313
-msgid "Length of the short description of the list view."
-msgstr "Longueur de la description de la vue en liste."
-
-#: inc/customizer/options/edd.php:540
-#: inc/customizer/options/woocommerce.php:1139
-msgid "Cart Dropdowns Width (px)"
-msgstr "Largeur de liste déroulante de panier (px)"
-
-#: inc/breadcrumbs.php:1097
-msgctxt "minute archives time format"
-msgid "i"
-msgstr "i"
-
-#: inc/breadcrumbs.php:446
-msgctxt "breadcrumbs aria label"
-msgid "Breadcrumbs"
-msgstr "Fil d’Ariane"
-
-#: comments.php:104 comments.php:117 inc/woocommerce/woocommerce-config.php:890
-#: partials/edd/single.php:54
-#: woocommerce/checkout/form-multistep-checkout.php:97
-msgid "Next"
-msgstr "Suivant"
-
-#: comments.php:103 comments.php:116 partials/edd/single.php:53
-msgid "Previous"
-msgstr "Précédent"
-
-#. translators: %s: Comments number
-#: comments.php:71
-msgid "This Post Has %s Comments"
-msgstr "Cet article a %s commentaires"
-
-#: 404.php:118
-msgid "Back To Homepage"
-msgstr "Revenir à l’accueil"
-
-#: inc/customizer/options/blog.php:316 inc/helpers.php:4248
-msgid "Medium"
-msgstr "Moyen"
-
-#: inc/customizer/options/blog.php:2518 inc/customizer/options/header.php:2594
-#: inc/customizer/options/page-settings.php:681
-#: inc/customizer/options/styles-and-settings.php:368
-msgid "Center Right"
-msgstr "Centrer à droite"
 
 #: inc/customizer/options/blog.php:442 inc/customizer/options/blog.php:443
 #: inc/customizer/options/edd.php:1361 inc/customizer/options/edd.php:1389
@@ -5688,6 +5619,68 @@ msgstr "Centrer à droite"
 msgid "Top"
 msgstr "Supérieur"
 
+#: inc/breadcrumbs.php:1163
+msgctxt "weekly archives date format"
+msgid "W"
+msgstr "S"
+
+#: inc/breadcrumbs.php:1133 inc/breadcrumbs.php:1188 inc/breadcrumbs.php:1563
+msgctxt "monthly archives date format"
+msgid "F"
+msgstr "M"
+
+#: inc/breadcrumbs.php:1132 inc/breadcrumbs.php:1162 inc/breadcrumbs.php:1187
+#: inc/breadcrumbs.php:1212 inc/breadcrumbs.php:1559
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "A"
+
+#: inc/customizer/options/woocommerce.php:2313
+msgid "Length of the short description of the list view."
+msgstr "Longueur de la description de la vue en liste."
+
+#: inc/customizer/options/edd.php:540
+#: inc/customizer/options/woocommerce.php:1139
+msgid "Cart Dropdowns Width (px)"
+msgstr "Largeur de liste déroulante de panier (px)"
+
+#: inc/breadcrumbs.php:1097
+msgctxt "minute archives time format"
+msgid "i"
+msgstr "i"
+
+#: inc/breadcrumbs.php:446
+msgctxt "breadcrumbs aria label"
+msgid "Breadcrumbs"
+msgstr "Fil d’Ariane"
+
+#: comments.php:104 comments.php:117 inc/woocommerce/woocommerce-config.php:890
+#: partials/edd/single.php:54
+#: woocommerce/checkout/form-multistep-checkout.php:97
+msgid "Next"
+msgstr "Suivant"
+
+#: comments.php:103 comments.php:116 partials/edd/single.php:53
+msgid "Previous"
+msgstr "Précédent"
+
+#. translators: %s: Comments number
+#: comments.php:71
+msgid "This Post Has %s Comments"
+msgstr "Cet article a %s commentaires"
+
+#: 404.php:118
+msgid "Back To Homepage"
+msgstr "Revenir à l’accueil"
+
+#: inc/customizer/options/header.php:5638
+msgid "Menu Text"
+msgstr "Texte du menu"
+
+#: inc/customizer/options/header.php:5594
+msgid "Dropdown Target"
+msgstr "Cible du menu déroulant"
+
 #: inc/walker/init.php:73
 msgid "Select A Template"
 msgstr "Choisissez un modèle"
@@ -5697,13 +5690,15 @@ msgstr "Choisissez un modèle"
 msgid "Go To Cart"
 msgstr "Voir le panier"
 
-#: inc/customizer/options/header.php:5638
-msgid "Menu Text"
-msgstr "Texte du menu"
+#: inc/customizer/options/blog.php:316 inc/helpers.php:4248
+msgid "Medium"
+msgstr "Moyen"
 
-#: inc/customizer/options/header.php:5594
-msgid "Dropdown Target"
-msgstr "Cible du menu déroulant"
+#: inc/customizer/options/blog.php:2518 inc/customizer/options/header.php:2594
+#: inc/customizer/options/page-settings.php:681
+#: inc/customizer/options/styles-and-settings.php:368
+msgid "Center Right"
+msgstr "Centrer à droite"
 
 #: inc/customizer/options/blog.php:1116 inc/customizer/options/blog.php:1123
 #: inc/customizer/options/blog.php:1130 inc/customizer/options/blog.php:1280
@@ -6032,6 +6027,11 @@ msgstr "Page d’atterrissage"
 #: inc/customizer/options/blog.php:385 inc/customizer/options/blog.php:386
 msgid "Masonry"
 msgstr "Masonry"
+
+#: inc/customizer/options/edd.php:1816
+#: inc/customizer/options/woocommerce.php:3500
+msgid "Category Color"
+msgstr "Couleur de la catégorie"
 
 #. Theme URI of the theme
 #: style.css

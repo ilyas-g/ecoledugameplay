@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template Name: Front Page Template
  *
@@ -14,17 +15,17 @@ get_header(); ?>
 		<div class="row justify-content-center site-content-row<?php echo (is_page_template('templates/front-page-template.php')) ? ' gutter-14' : ''; ?>">
 			<div id="primary" class="content-area<?php echo esc_attr(newscard_layout_primary()); ?>">
 
-				<?php if ( is_active_sidebar('newscard_front_page_content_section') ) : ?>
+				<?php if (is_active_sidebar('newscard_front_page_content_section')) : ?>
 
 					<main id="main" class="site-main" role="main">
-						<?php dynamic_sidebar( 'newscard_front_page_content_section' ); ?>
+						<?php dynamic_sidebar('newscard_front_page_content_section'); ?>
 					</main><!-- #main .site-main -->
 
 				<?php endif; ?>
 
 			</div><!-- #primary -->
 
-			<?php if ( is_active_sidebar('newscard_front_page_sidebar_section') ) :
+			<?php if (is_active_sidebar('newscard_front_page_sidebar_section')) :
 
 				$newscard_settings = newscard_get_option_defaults();
 
@@ -34,37 +35,30 @@ get_header(); ?>
 				}
 				$newscard_custom_layout = $newscard_settings['newscard_content_layout'];
 
-				if ( empty($newscard_meta_layout) ) {
+				if (empty($newscard_meta_layout)) {
 					$newscard_meta_layout = 'default';
 				}
 
-				if ( ('default' == $newscard_meta_layout && 'right' == $newscard_custom_layout) || 'meta-right' == $newscard_meta_layout ) { ?>
+				if (('default' == $newscard_meta_layout && 'right' == $newscard_custom_layout) || 'meta-right' == $newscard_meta_layout) { ?>
 
 					<aside id="secondary" class="col-lg-4 widget-area" role="complementary">
 						<div class="sticky-sidebar">
-							<?php dynamic_sidebar( 'newscard_front_page_sidebar_section' ); ?>
+							<?php dynamic_sidebar('newscard_front_page_sidebar_section'); ?>
 						</div><!-- .sticky-sidebar -->
 					</aside><!-- #secondary -->
 
-				<?php } elseif ( ('default' == $newscard_meta_layout && 'left' == $newscard_custom_layout) || 'meta-left' == $newscard_meta_layout ) { ?>
+				<?php } elseif (('default' == $newscard_meta_layout && 'left' == $newscard_custom_layout) || 'meta-left' == $newscard_meta_layout) { ?>
 
 					<aside id="secondary" class="col-lg-4 widget-area order-lg-1" role="complementary">
 						<div class="sticky-sidebar">
-							<?php dynamic_sidebar( 'newscard_front_page_sidebar_section' ); ?>
+							<?php dynamic_sidebar('newscard_front_page_sidebar_section'); ?>
 						</div><!-- .sticky-sidebar -->
 					</aside><!-- #secondary -->
 
-				<?php }
+			<?php }
 
 			endif; ?>
 		</div><!-- row -->
 	</div><!-- .container -->
 </div><!-- #content .site-content-->
 <?php get_footer();
-
-
-
-
-
-
-
