@@ -14,35 +14,45 @@ function blogdata_theme_fonts() {
         wp_enqueue_style( 'blogdata-theme-fonts', wptt_get_webfont_url( $fonts_url ), array(), '20201110' );
     }
 }
+function blogdata_get_google_fonts_list() {
+    return array(
+        'DM Sans',
+        'Open Sans',
+        'Kalam',
+        'Rokkitt',
+        'Jost',
+        'Poppins',
+        'Lato',
+        'Noto Serif',
+        'Raleway',
+        'Roboto',
+        'Inter',
+    );
+}
 
 function blogdata_fonts_url() {
-	
     $fonts_url = '';
-		
+    
+    // Step 1: Get font names
+    $fonts = blogdata_get_google_fonts_list();
+    
+    // Step 2: Set a common weight string
+    $common_weights = '100,200,300,400,500,600,700,800,900';
+    
+    // Step 3: Format fonts for Google Fonts URL
     $font_families = array();
- 
-        $font_families = array(
-            'DM Sans:300,400,500,600,700,800,900',
-            'Open Sans:300,400,500,600,700,800,900',
-            'Kalam:300,400,500,600,700,800,900',
-            'Rokkitt:300,400,500,600,700,800,900',
-            'Jost:300,400,500,600,700,800,900',
-            'Poppins:300,400,500,600,700',
-            'Lato:300,400,500,600,700,800,900',
-            'Noto Serif:300,400,500,600,700,800,900',
-            'Raleway:300,400,500,600,700,800,900',
-            'Roboto:300,400,500,600,700,800,900',
-            'Inter :100,200,300,400,500,600,700,800,900',
-        );
+    foreach ( $fonts as $font_name ) {
+        $font_families[] = $font_name . ':' . $common_weights;
+    }
 
-        // Build the URL
-        $query_args = array(
-            'family' => urlencode( implode( '|', $font_families ) ),
-            'display' => 'swap',
-            'subset' => 'latin,latin-ext',
-        );
- 
-    return apply_filters( 'blogdata_fonts_url', add_query_arg( $query_args, 'https://fonts.googleapis.com/css' ) );
+    // Step 4: Generate the full Google Fonts URL
+    $query_args = array(
+        'family' => urlencode( implode( '|', $font_families ) ),
+        'display' => 'swap',
+        'subset'  => 'latin,latin-ext',
+    );
+
+    $fonts_url = add_query_arg( $query_args, 'https://fonts.googleapis.com/css' );
 
     return $fonts_url;
 }

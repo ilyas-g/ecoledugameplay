@@ -68,12 +68,30 @@
                 </div><!-- .infobar -->
             <?php } ?>
             <nav class="navbar navbar-expand-lg d-block">
-                <div class="navbar-head<?php echo ($newscard_settings['newscard_header_background'] !== '') ? ' navbar-bg-set' : '';
-                                        echo ($newscard_settings['newscard_header_bg_overlay'] === 'dark') ? ' header-overlay-dark' : '';
-                                        echo ($newscard_settings['newscard_header_bg_overlay'] === 'light') ? ' header-overlay-light' : ''; ?>" <?php if ($newscard_settings['newscard_header_background'] !== '') { ?> style="background-image:url('<?php echo esc_url($newscard_settings['newscard_header_background']); ?>');" <?php } ?>>
-                    <div class="container">
-                        <div class="row navbar-head-row align-items-center">
-                            <div class="col-lg-4">
+
+                <div class="navigation-bar">
+                    <div class="navigation-bar-top">
+                        <div class="container">
+                            <button class="navbar-toggler menu-toggle" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'newscard'); ?>"></button>
+                            <span class="search-toggle"></span>
+                        </div><!-- .container -->
+                        <div class="search-bar">
+                            <div class="container">
+                                <div class="search-block off">
+                                    <?php get_search_form(); ?>
+                                </div><!-- .search-box -->
+                            </div><!-- .container -->
+                        </div><!-- .search-bar -->
+                    </div><!-- .navigation-bar-top -->
+                    <div class="navbar-main">
+                        <div class="container">
+                            <div class="collapse navbar-collapse" id="navbarCollapse">
+                                <!-- <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+                                    <img src="wp-content/themes/edg-theme/edg-logo-abbreg.png" alt="EDG Logo" class="edg-navbar-logo" />
+                                </a> -->
+
+
+
                                 <div class="site-branding navbar-brand">
                                     <?php
                                     the_custom_logo();
@@ -92,41 +110,8 @@
                                         <p class="site-description"><?php echo $newscard_description; /* WPCS: xss ok. */ ?></p>
                                     <?php endif; ?>
                                 </div><!-- .site-branding .navbar-brand -->
-                            </div>
-                            <?php if ($newscard_settings['newscard_header_add_image'] !== '') { ?>
-                                <div class="col-lg-8 navbar-ad-section">
-                                    <?php if ($newscard_settings['newscard_header_add_link'] !== '') { ?>
-                                        <a href="<?php echo esc_url($newscard_settings['newscard_header_add_link']); ?>" class="newscard-ad-728-90" target="_blank" rel="noopener noreferrer">
-                                        <?php } ?>
-                                        <img class="img-fluid" src="<?php echo esc_url($newscard_settings['newscard_header_add_image']); ?>" alt="<?php esc_attr_e('Banner Add', 'newscard'); ?>">
-                                        <?php if ($newscard_settings['newscard_header_add_link'] !== '') { ?>
-                                        </a>
-                                    <?php } ?>
-                                </div>
-                            <?php } ?>
-                        </div><!-- .row -->
-                    </div><!-- .container -->
-                </div><!-- .navbar-head -->
-                <div class="navigation-bar">
-                    <div class="navigation-bar-top">
-                        <div class="container">
-                            <button class="navbar-toggler menu-toggle" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'newscard'); ?>"></button>
-                            <span class="search-toggle"></span>
-                        </div><!-- .container -->
-                        <div class="search-bar">
-                            <div class="container">
-                                <div class="search-block off">
-                                    <?php get_search_form(); ?>
-                                </div><!-- .search-box -->
-                            </div><!-- .container -->
-                        </div><!-- .search-bar -->
-                    </div><!-- .navigation-bar-top -->
-                    <div class="navbar-main">
-                        <div class="container">
-                            <div class="collapse navbar-collapse" id="navbarCollapse">
-                                <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-                                    <img src="wp-content/themes/edg-theme/edg-logo-abbreg.png" alt="EDG Logo" class="edg-navbar-logo" />
-                                </a>
+
+
                                 <div id="site-navigation" class="main-navigation<?php echo ($newscard_settings['newscard_nav_uppercase'] == 1) ? " nav-uppercase" : ""; ?>" role="navigation">
                                     <?php
                                     if (has_nav_menu('primary')) {
@@ -268,9 +253,7 @@
                                                                 <a href="<?php the_permalink(); ?>" class="post-img" <?php if (has_post_thumbnail()) { ?> style="background-image: url('<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'full')); ?>');" <?php } ?>></a>
                                                             </div>
                                                             <div class="entry-header">
-                                                                <div class="entry-meta category-meta">
-                                                                    <div class="cat-links"><?php the_category(' '); ?></div>
-                                                                </div><!-- .entry-meta -->
+
                                                                 <?php the_title('<h2 class="entry-title"><a href="' . esc_url(get_permalink()) . '">', '</a></h2>'); ?>
                                                                 <?php if ('post' === get_post_type()) { ?>
                                                                     <div class="entry-meta">
@@ -319,9 +302,7 @@
                                                                 <a href="<?php the_permalink(); ?>" class="post-img" <?php if (has_post_thumbnail()) { ?> style="background-image: url('<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'full')); ?>');" <?php } ?>></a>
                                                             </div>
                                                             <div class="entry-header">
-                                                                <div class="entry-meta category-meta">
-                                                                    <div class="cat-links"><?php the_category(' '); ?></div>
-                                                                </div><!-- .entry-meta -->
+
                                                                 <?php the_title('<h2 class="entry-title"><a href="' . esc_url(get_permalink()) . '">', '</a></h2>'); ?>
                                                                 <?php if ('post' === get_post_type()) { ?>
                                                                     <div class="entry-meta">
@@ -370,9 +351,7 @@
                                                                 <a href="<?php the_permalink(); ?>" class="post-img" <?php if (has_post_thumbnail()) { ?> style="background-image: url('<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'full')); ?>');" <?php } ?>></a>
                                                             </div>
                                                             <div class="entry-header">
-                                                                <div class="entry-meta category-meta">
-                                                                    <div class="cat-links"><?php the_category(' '); ?></div>
-                                                                </div><!-- .entry-meta -->
+
                                                                 <?php the_title('<h2 class="entry-title"><a href="' . esc_url(get_permalink()) . '">', '</a></h2>'); ?>
                                                                 <?php if ('post' === get_post_type()) { ?>
                                                                     <div class="entry-meta">
@@ -421,17 +400,11 @@
                                                         <div class="featured-post-img">
                                                             <a href="<?php the_permalink(); ?>" class="post-img" style="background-image: url('<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'large')); ?>');"></a>
                                                         </div>
-                                                        <div class="entry-meta category-meta">
-                                                            <div class="cat-links"><?php the_category(' '); ?></div>
-                                                        </div><!-- .entry-meta -->
+
                                                     </div><!-- .post-img-wrap -->
                                                 <?php } ?>
                                                 <div class="post-content">
-                                                    <?php if (!has_post_thumbnail()) { ?>
-                                                        <div class="entry-meta category-meta">
-                                                            <div class="cat-links"><?php the_category(' '); ?></div>
-                                                        </div><!-- .entry-meta -->
-                                                    <?php } ?>
+
                                                     <?php the_title('<h3 class="entry-title"><a href="' . esc_url(get_permalink()) . '">', '</a></h3>'); ?>
                                                     <?php if ('post' === get_post_type()) { ?>
                                                         <div class="entry-meta">

@@ -77,7 +77,7 @@ function blogdata_get_default_theme_options() {
     // Typography Section.
     // Body
     $defaults['heading_fontfamily'] = 'Inter';
-    $defaults['heading_fontweight'] =  '700';
+    $defaults['heading_fontweight'] =  '600';
 
     // Meus
     $defaults['blogdata_menu_fontfamily'] = 'Inter';

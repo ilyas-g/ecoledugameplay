@@ -31,15 +31,23 @@ a, a:hover {
        background-color: #010101;
     color: #ffffff;
 }
- .navbar .nav-search {
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
- }
 
- .social-profiles {
-    margin-bottom: 0;
- }
+
+
+.navbar .nav-search {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+   .navbar .nav-search {
+      display: flex;
+      /* justify-content: center; */
+      /* align-items: center; */
+   }
+}
+
+.social-profiles {
+   margin-bottom: 0;
+}
 
 .nav-search .social-profiles ul li {
    padding-right: 0;
@@ -153,4 +161,48 @@ input[type="reset"]:hover, input[type="button"]:hover, input[type="submit"]:hove
 
 .post-slider .owl-nav button.owl-prev:hover:before, .post-slider .owl-nav button.owl-next:hover:before {
    color: #f4f4f4;
+}
+
+.entry-title a:hover, .entry-title a:focus {
+   color: #1e1601;
+}
+
+.entry-meta a:hover, .entry-meta a:focus {
+   color: #1e1601;
+}
+
+.navbar {
+   position: fixed;
+   left: 0;
+   right: 0;
+   z-index: 2;
+}
+
+.navbar .custom-logo {
+   max-width: 200px;
+}
+
+.post-wrap .post-img-wrap .entry-meta.category-meta {
+   display: none;
+}
+
+.site-content, .featured-section {
+   padding-top: 100px;
+}
+
+.cat-links {
+   display: none;
+}
+
+.entry-meta .category-meta {
+   display: none;
+}
+
+.site-main .type-page {
+   background-color: #f2f3f5;
+}
+
+.post, .hentry, .product.type-product, .type-attachment {
+   background-color: #f2f3f5;
+
 }
