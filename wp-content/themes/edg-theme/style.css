@@ -1,0 +1,208 @@
+/**
+ * Theme Name:     EDG Theme
+ * Author:         Arktall
+ * Template:       newscard
+ * Text Domain:	   edg-theme
+ * Description:    Ecole du Gameplay, l\&#039;émission qui parle de jeux vidéo en mettant l\&#039;accent sur le gameplay des jeux
+ * Author URI:     http://Arktall
+ * Version:        1.0.0
+ * Tags:           jeux vidéo, gameplay, école du gameplay, xbox, playstation, nintendo, console, PC, steam, twitch, jeux indépendants
+ */
+
+
+body {
+    background-color: #242424;
+        color: #f4f4f4;
+}
+
+a, a:hover {
+    color: #e7b941;
+}
+
+.edg-navbar-logo {
+   height: 50px;
+   padding-right: 15px;
+}
+
+.navbar {
+    padding: 0;
+}
+.navigation-bar {
+       background-color: #010101;
+    color: #ffffff;
+}
+
+
+
+.navbar .nav-search {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+   .navbar .nav-search {
+      display: flex;
+      /* justify-content: center; */
+      /* align-items: center; */
+   }
+}
+
+.social-profiles {
+   margin-bottom: 0;
+}
+
+.nav-search .social-profiles ul li {
+   padding-right: 0;
+   padding-left: 0;
+}
+.nav-search .social-profiles ul li a {
+   color: #fff;
+   opacity: 1;
+   padding: 22px 10px;
+}
+
+.nav-search .social-profiles ul li a:hover, .nav-search .social-profiles ul li:hover > a {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+
+.post-img-wrap::before, .page-single-img-wrap::before {
+    content: "";
+    padding-top: 60%;
+    display: block;
+
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; */
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.patreon {
+   padding: 19px 10px;
+   background-color: #fc674d;
+}
+
+.patreon:hover {
+   color: #ffffff;
+   background-color: rgba(0, 0, 0, 0.15);
+}
+
+.patreon-logo {
+   height: 21px
+}
+
+.entry-meta > div:after {
+    content: "-";
+}
+
+.stories-title {
+	font-size: 20px;
+	padding-left: 10px;
+	border-left: 4px solid #e7b941;
+	margin-bottom: 15px;
+	font-weight: 700;
+	text-align: left;
+}
+
+.post-img-wrap .entry-meta .cat-links a, .post-img-wrap + .entry-header .entry-meta .cat-links a {
+       background-color: #e7b941;
+    color: #ffffff;
+}
+
+.editor-styles-wrapper, .entry-content {
+   color: #333333;
+}
+
+.navigation.pagination .current, .navigation.pagination a:hover {
+       color: #fff;
+    background-color: #e7b941;
+}
+
+.back-to-top a {
+    background-color: #e7b941; 
+}
+
+.widget-title {
+   border-left: 4px solid #e7b941;
+}
+
+.comments-area {
+   color: #333333;
+}
+
+input[type="reset"], input[type="button"], input[type="submit"], button {
+   background-color: #e7b941;
+}
+
+input[type="reset"]:hover, input[type="button"]:hover, input[type="submit"]:hover, button:hover {
+   background-color: #1e1601;
+}
+
+.navigation.post-navigation .nav-links a:hover {
+   color: #1e1601;
+}
+
+.comment-metadata a.comment-edit-link {
+   color: #e7b941
+}
+
+.btn-theme {
+   color: #ffffff;
+   background-color: #e7b941;
+}
+.btn-theme:hover {
+   background-color: #1e1601;
+}
+
+.page-title {
+   color : #f4f4f4;
+}
+
+.post-slider .owl-nav button.owl-prev:hover:before, .post-slider .owl-nav button.owl-next:hover:before {
+   color: #f4f4f4;
+}
+
+.entry-title a:hover, .entry-title a:focus {
+   color: #1e1601;
+}
+
+.entry-meta a:hover, .entry-meta a:focus {
+   color: #1e1601;
+}
+
+.navbar {
+   position: fixed;
+   left: 0;
+   right: 0;
+   z-index: 2;
+}
+
+.navbar .custom-logo {
+   max-width: 200px;
+}
+
+.post-wrap .post-img-wrap .entry-meta.category-meta {
+   display: none;
+}
+
+.site-content, .featured-section {
+   padding-top: 100px;
+}
+
+.cat-links {
+   display: none;
+}
+
+.entry-meta .category-meta {
+   display: none;
+}
+
+.site-main .type-page {
+   background-color: #f2f3f5;
+}
+
+.post, .hentry, .product.type-product, .type-attachment {
+   background-color: #f2f3f5;
+
+}
