@@ -432,3 +432,9 @@
                 </div><!-- .breadcrumb -->
             <?php } ?>
         </header><!-- #masthead -->
+
+        <?php
+
+        include __DIR__ . '/fecthDataPlaylist.php';
+
+        ?>
