@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Jetpack &#8211; WP Security, Backup, Speed, &amp; Growth - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-08-05 16:58:29+0000\n"
+"PO-Revision-Date: 2025-08-14 12:54:10+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,6 +23,46 @@ msgctxt "block title"
 msgid "PayPal Payment Buttons"
 msgstr "Boutons de paiement PayPal"
 
+#: _inc/lib/core-api/wpcom-endpoints/memberships.php:647
+msgid "Another yearly plan already references this monthly plan. Each monthly plan can only have one corresponding yearly plan."
+msgstr "Un autre plan annuel référence déjà ce plan mensuel. Chaque plan mensuel ne peut correspondre qu’à un seul plan annuel."
+
+#: _inc/lib/core-api/wpcom-endpoints/memberships.php:639
+msgid "Unexpected error: product list is not iterable."
+msgstr "Erreur inattendue : la liste de produits n’est pas itérable."
+
+#: _inc/lib/core-api/wpcom-endpoints/memberships.php:634
+msgid "Could not retrieve existing products to check for duplicate tier references."
+msgstr "Impossible de récupérer les produits existants pour vérifier les références de palier en double."
+
+#: _inc/lib/core-api/wpcom-endpoints/memberships.php:618
+msgid "The specified tier ID must point to a monthly plan (1 month interval)."
+msgstr "L’ID de palier spécifié doit pointer vers un plan mensuel (intervalle d’un mois)."
+
+#: _inc/lib/core-api/wpcom-endpoints/memberships.php:613
+msgid "The specified tier ID does not correspond to an existing monthly plan."
+msgstr "L’ID de palier spécifié ne correspond à aucun plan mensuel existant."
+
+#: _inc/lib/core-api/wpcom-endpoints/memberships.php:589
+msgid "Yearly plans must have a valid tier ID that points to an existing monthly plan."
+msgstr "Les plans annuels doivent avoir un ID de palier valide qui pointe vers un plan mensuel existant."
+
+#: _inc/lib/core-api/wpcom-endpoints/memberships.php:569
+msgid "Monthly plans should not have a tier field. The tier field is only used to link yearly plans to their corresponding monthly plans."
+msgstr "Les plans mensuels ne doivent pas avoir de champ de palier. Le champ palier n’est utilisé que pour lier les plans annuels aux plans mensuels correspondants."
+
+#: _inc/lib/core-api/class.jetpack-core-api-module-endpoints.php:1078
+msgid "Newsletter category did not update."
+msgstr "La catégorie de la newsletter n’a pas été mise à jour."
+
+#: jetpack_vendor/automattic/jetpack-forms/src/service/class-mailpoet-integration.php:76
+msgid "Subscribers from Jetpack Forms"
+msgstr "Abonnés de Jetpack Forms"
+
+#: jetpack_vendor/automattic/jetpack-forms/src/contact-form/class-feedback-field.php:92
+msgid "Field"
+msgstr "Champ"
+
 #: jetpack_vendor/automattic/jetpack-forms/src/contact-form/class-contact-form.php:1910
 msgid "Block Template Part"
 msgstr "Bloc Élément de modèle"
@@ -34,6 +74,18 @@ msgstr "Bloc Modèle"
 #: jetpack_vendor/automattic/jetpack-forms/src/contact-form/class-contact-form.php:1904
 msgid "Sidebar Widget"
 msgstr "Widget de la colonne latérale"
+
+#: jetpack_vendor/automattic/jetpack-forms/src/contact-form/class-contact-form-plugin.php:2070
+msgid "Source URL:"
+msgstr "URL source :"
+
+#: jetpack_vendor/automattic/jetpack-forms/src/contact-form/class-contact-form-plugin.php:2065
+msgid "Source Title"
+msgstr "Titre source"
+
+#: jetpack_vendor/automattic/jetpack-forms/src/contact-form/class-contact-form-field.php:2209
+msgid "Please select a valid value"
+msgstr "Veuillez sélectionner une valeur valide"
 
 #: jetpack_vendor/automattic/jetpack-forms/src/contact-form/class-contact-form-field.php:1550
 msgid "You are on a date picker input. Use the down key to focus into the date picker. Or type the date in the format MM/DD/YYYY"

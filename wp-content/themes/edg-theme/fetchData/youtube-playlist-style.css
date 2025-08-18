@@ -43,19 +43,20 @@ a.channel:hover {
 }
 
 #playlist {
-  top: 140%;
-  left: 50%;
-  width: 80vw;
-  height: 60vh;
+  /* top: 140%;
+  left: 50%; */
+  width: 60vw;
+  height: 45.45vh;
   display: flex;
-  position: absolute;
-  transform: translate(-50%, -50%);
+  /* position: absolute; */
+  /* transform: translate(-50%, -50%); */
   transition: all ease 0.3s;
+  margin: 50px auto;
 }
 
 #video-dis {
   flex: 6.5;
-  margin-right: 20px;
+  /* margin-right: 20px; */
   background: black;
 }
 #video-dis iframe {
@@ -66,7 +67,7 @@ a.channel:hover {
   flex: 3.5;
   display: flex;
   padding: var(--YTPb-pad);
-  border-radius: 3px;
+  /* border-radius: 3px; */
   flex-direction: column;
   background: var(--YTPprimary);
 }
@@ -75,7 +76,7 @@ a.channel:hover {
   height: 40px;
 }
 #vli-info {
-  flex: 3;
+  /* flex: 3; */
   padding: 0 var(--YTPb-pad) 0 var(--YTPb-pad);
 }
 

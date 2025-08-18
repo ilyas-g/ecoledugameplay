@@ -73,7 +73,7 @@ while (!isset($response) || $nextPageToken != null) {
     $response = $service->playlistItems->listPlaylistItems(
         'snippet',
         [
-            'playlistId' => 'PLitZkRNNn1LhLK-5UQQG7cDvA5VdKHKLa',
+            'playlistId' => 'PLitZkRNNn1Li7fSY0X54TrP_-PWsipizm',
             'pageToken' => $nextPageToken,
             'maxResults' => 50,
         ]
@@ -83,8 +83,10 @@ while (!isset($response) || $nextPageToken != null) {
     $videos = array_merge($videos, $response->items);
 }
 
-dump($videos);
+// dump($videos);
+?>
 
+<?php
 // $video = $response->items[0]->snippet;
 
 // dump($response);
@@ -92,107 +94,68 @@ dump($videos);
 foreach ($videos as $video):
     $idVideo = "https://www.youtube.com/embed/" . $video->snippet->resourceId->videoId . "?si=0Rb1TylvP0fcLhKs";
 ?>
-    <iframe
+    <!-- <iframe
         width="560"
         height="315"
         src=<?php echo $idVideo; ?>
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
 
 <?php endforeach; ?>
 
+<div class="bg-red-test">
+    <div id="playlist">
+        <div id="video-dis">
+            <iframe id="display-frame" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
-
-<!--
-    Icon Images are coming from my github account.
-    Thumbnail images are coming directly from youtube.
-
-    Visit the behance project to see the behind the sences
-    // link will be shared soon
-
-    Please leave a love!
--->
-
-<div id="playlist">
-
-    <div id="video-dis">
-        <iframe id="display-frame" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-    <div id="v-list" class="video-li">
-
-        <div id="vli-info">
-            <div id="upper-info">
-                <div id="li-titles">
-                    <div class="title">Web Development Videos</div>
-                    <div class="sub-title">
-                        <a href="https://www.youtube.com/channel/UCD7RHHe-SuFiTWEsC0S1dLg" class="channel">Rejwan Islam</a>
-                        -
-                        <span id="video-count">1 / 2</span>
+        <div id="v-list" class="video-li">
+            <div id="vli-info">
+                <div id="upper-info">
+                    <div id="li-titles">
+                        <div class="title">L'émission L'École du Gameplay</div>
+                        <div class="sub-title">
+                            <a href="https://www.youtube.com/@mkrza5959" class="channel">MK RZA</a>
+                            -
+                            <span id="video-count">1 / 2</span>
+                        </div>
                     </div>
+                    <!-- <div id="drop-icon"></div> -->
                 </div>
-                <div id="drop-icon"></div>
-            </div>
-            <div id="lower-info">
+                <!-- <div id="lower-info">
                 <div id="btn-repeat"></div>
                 <div id="btn-suffle"></div>
                 <div id="btn-save"></div>
-            </div>
-        </div>
-
-        <div id="vli-videos">
-            <div class="video-con active-con" video="https://www.youtube.com/embed/BVyTt3QJfIA">
-                <div class="index title">0</div>
-                <div class="thumb">
-                    <img src="https://i.ytimg.com/vi/BVyTt3QJfIA/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDNZqTQuBOTuGgLFnsrstzTBdJhgg" alt="">
-                </div>
-                <div class="v-titles">
-                    <div class="title">Google chrome custom new tab</div>
-                    <div class="sub-title">
-                        <a href="https://www.youtube.com/channel/UCD7RHHe-SuFiTWEsC0S1dLg" class="channel" target="_blank">Rejwan Islam</a>
-                    </div>
-                </div>
+            </div> -->
             </div>
 
-            <div class="video-con" video="https://www.youtube.com/embed/O-D1VsX7J4s">
-                <div class="index title">0</div>
-                <div class="thumb">
-                    <img src="https://i.ytimg.com/vi/O-D1VsX7J4s/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAmbtXY8Fuq9TWBwe9KPru9q6nnyg" alt="">
-                </div>
-                <div class="v-titles">
-                    <div class="title">Awesome Periodic Table using Html and Css</div>
-                    <div class="sub-title">
-                        <a href="https://www.youtube.com/channel/UCD7RHHe-SuFiTWEsC0S1dLg" class="channel" target="_blank">Rejwan Islam</a>
-                    </div>
-                </div>
-            </div>
+            <div id="vli-videos">
 
-            <div class="video-con" video="https://www.youtube.com/embed/glqWxsQmY3U">
-                <div class="index title">0</div>
-                <div class="thumb">
-                    <img src="https://i.ytimg.com/vi/glqWxsQmY3U/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLA32gZV0D42Si70gSXZ3B4Aoz4P1w" alt="">
-                </div>
-                <div class="v-titles">
-                    <div class="title">JavaScript Debugging - Android Button Effect</div>
-                    <div class="sub-title">
-                        <a href="https://www.youtube.com/channel/UCD7RHHe-SuFiTWEsC0S1dLg" class="channel" target="_blank">Rejwan Islam</a>
-                    </div>
-                </div>
-            </div>
+                <?php foreach ($videos as $video):
+                    $idVideo = "https://www.youtube.com/embed/" . $video->snippet->resourceId->videoId . "?si=0Rb1TylvP0fcLhKs";
+                    $thumbnailVideo = $video->snippet->thumbnails->maxres->url;
+                    $titleVideo = $video->snippet->title;
+                    $ownerVideo = $video->snippet->videoOwnerChannelTitle;
+                    $idChannel = "https://www.youtube.com/channel/" . $video->snippet->channelId;
 
-            <div class="video-con" video="https://www.youtube.com/embed/Eg4hPSMRtds">
-                <div class="index title">0</div>
-                <div class="thumb">
-                    <img src="https://i.ytimg.com/vi/Eg4hPSMRtds/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBrnuS1go5YalWfku7pWWqScHvkkQ" alt="">
-                </div>
-                <div class="v-titles">
-                    <div class="title">Calculator: Parallel and series resistance</div>
-                    <div class="sub-title">
-                        <a href="https://www.youtube.com/channel/UCD7RHHe-SuFiTWEsC0S1dLg" class="channel" target="_blank">Rejwan Islam</a>
-                    </div>
-                </div>
+                    if ($video->snippet->resourceId->videoId !== null && $thumbnailVideo !== null) {
+                ?>
+                        <div class="video-con active-con" video=<?php echo $idVideo; ?>>
+                            <div class="index title">0</div>
+                            <div class="thumb">
+                                <img src=<?php echo $thumbnailVideo; ?> alt="">
+                            </div>
+                            <div class="v-titles">
+                                <div class="title"><?php echo $titleVideo; ?></div>
+                                <div class="sub-title">
+                                    <a href=<?php echo $idChannel; ?> class="channel" target="_blank"><?php echo $ownerVideo; ?></a>
+                                </div>
+                            </div>
+                        </div>
+                <?php }
+                endforeach; ?>
+
             </div>
 
         </div>
-
     </div>
 </div>

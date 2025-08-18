@@ -11,12 +11,12 @@
 
 
 body {
-    background-color: #242424;
-        color: #f4f4f4;
+   background-color: #242424;
+   color: #f4f4f4;
 }
 
 a, a:hover {
-    color: #e7b941;
+   color: #e7b941;
 }
 
 .edg-navbar-logo {
@@ -25,11 +25,11 @@ a, a:hover {
 }
 
 .navbar {
-    padding: 0;
+   padding: 0;
 }
 .navigation-bar {
-       background-color: #010101;
-    color: #ffffff;
+   background-color: #010101;
+   color: #ffffff;
 }
 
 
@@ -60,8 +60,8 @@ a, a:hover {
 }
 
 .nav-search .social-profiles ul li a:hover, .nav-search .social-profiles ul li:hover > a {
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.15);
+    color: #d5d5d5;
+    /* background-color: rgba(0, 0, 0, 0.15); */
 }
 
 
@@ -84,8 +84,7 @@ a, a:hover {
 }
 
 .patreon:hover {
-   color: #ffffff;
-   background-color: rgba(0, 0, 0, 0.15);
+   background-color: #ffffff;
 }
 
 .patreon-logo {
@@ -140,7 +139,7 @@ input[type="reset"]:hover, input[type="button"]:hover, input[type="submit"]:hove
 }
 
 .navigation.post-navigation .nav-links a:hover {
-   color: #1e1601;
+   color: #d5d5d5;
 }
 
 .comment-metadata a.comment-edit-link {
@@ -164,10 +163,12 @@ input[type="reset"]:hover, input[type="button"]:hover, input[type="submit"]:hove
 }
 
 .entry-title a:hover, .entry-title a:focus {
-   color: #1e1601;
+   /* color: #d5d5d5; */
+      color: #1e1601;
 }
 
 .entry-meta a:hover, .entry-meta a:focus {
+   /* color: #d5d5d5; */
    color: #1e1601;
 }
 
@@ -205,4 +206,19 @@ input[type="reset"]:hover, input[type="button"]:hover, input[type="submit"]:hove
 .post, .hentry, .product.type-product, .type-attachment {
    background-color: #f2f3f5;
 
+}
+
+.main-navigation.nav-uppercase ul li a:hover {
+   color: #d5d5d5;
+}
+
+/* color: #1e1601; */
+
+
+.bg-red-test {
+   /* background-color: red; */
+   background-image: url('https://cdn.wallpapersafari.com/66/93/CVSHZD.jpg');
+   background-size: cover;
+   padding: 50px;
+   margin: 50px 0;
 }

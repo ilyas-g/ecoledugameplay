@@ -186,71 +186,70 @@
       subMenusSubOffsetY: -8
     });
   });
-
   
-/*---------------------------------------
-	Off Canvas           
------------------------------------------*/
-let clickableAddElementRight = document.querySelector('[bs-data-clickable-end]');
-let clickableRemoveElement = document.querySelector('[bs-data-removable]');
-let clickableRemoveElementTwo = document.querySelector('[bs-remove-overlay]');
-let targetElement = document.querySelector('[bs-data-targeted]'); 
-let targetBody = document.querySelector('body'); 
+  /*---------------------------------------
+    Off Canvas           
+  -----------------------------------------*/
+  let clickableAddElementRight = document.querySelector('[bs-data-clickable-end]');
+  let clickableRemoveElement = document.querySelector('[bs-data-removable]');
+  let clickableRemoveElementTwo = document.querySelector('[bs-remove-overlay]');
+  let targetElement = document.querySelector('[bs-data-targeted]'); 
+  let targetBody = document.querySelector('body'); 
 
-// Function to handle the click event
-function handleClickRight() { 
-  targetElement.classList.add('from-right'); 
-  clickableRemoveElementTwo.classList.add('show'); 
-  targetBody.style.overflow = 'hidden';
-  targetBody.style.paddingRight = '17px';
-}
-function handleClickRemove() {
-  targetElement.classList.remove('from-right');
-  clickableRemoveElementTwo.classList.remove('show'); 
-  targetBody.style.overflow = null;
-  targetBody.style.paddingRight = null;
-}
+  // Function to handle the click event
+  function handleClickRight() { 
+    targetElement.classList.add('from-right'); 
+    clickableRemoveElementTwo.classList.add('show'); 
+    targetBody.style.overflow = 'hidden';
+    targetBody.style.paddingRight = '17px';
+  }
+  function handleClickRemove(event) {
+    event.preventDefault();
+    targetElement.classList.remove('from-right');
+    clickableRemoveElementTwo.classList.remove('show'); 
+    targetBody.style.overflow = null;
+    targetBody.style.paddingRight = null;
+  }
 
-// Attach the handleClick function to the click event of the clickable element
-if( (clickableAddElementRight !== null) && (clickableAddElementRight !== undefined)) {
-  clickableAddElementRight.addEventListener('click', handleClickRight);
-}
-clickableRemoveElement.addEventListener('click', handleClickRemove);
-clickableRemoveElementTwo.addEventListener('click', handleClickRemove);
+  // Attach the handleClick function to the click event of the clickable element
+  if( (clickableAddElementRight !== null) && (clickableAddElementRight !== undefined)) {
+    clickableAddElementRight.addEventListener('click', handleClickRight);
+  }
+  clickableRemoveElement.addEventListener('click', handleClickRemove);
+  clickableRemoveElementTwo.addEventListener('click', handleClickRemove);
 
+  /*---------------------------------------
+    Search           
+  -----------------------------------------*/
+  let clickAddElementSearch = document.querySelector('[bs-search-clickable]');
+  let targetSerachElement = document.querySelector('[bs-search-targeted]'); 
+  let targetHideSerach = document.querySelector('[bs-dismiss-search]'); 
 
-/*---------------------------------------
-	Search           
------------------------------------------*/
-let clickAddElementSearch = document.querySelector('[bs-search-clickable]');
-let targetSerachElement = document.querySelector('[bs-search-targeted]'); 
-let targetHideSerach = document.querySelector('[bs-dismiss-search]'); 
+  // Function to handle the click event
+  function openSearch() { 
+    clickableRemoveElementTwo.classList.add('show');
+    targetSerachElement.classList.add('show-search');
+    targetBody.style.overflow = 'hidden'; 
+    targetBody.style.paddingRight = '17px'; 
+  }
+  function hideSearch() {
+    clickableRemoveElementTwo.classList.remove('show'); 
+    targetSerachElement.classList.remove('show-search');
+    targetBody.style.overflow = null;
+    targetBody.style.paddingRight = null;
+  }
+  if(clickAddElementSearch){
+    clickAddElementSearch.addEventListener('click', openSearch);
+  }
+  targetHideSerach.addEventListener('click', hideSearch);
 
-// Function to handle the click event
-function openSearch() { 
-  clickableRemoveElementTwo.classList.add('show');
-  targetSerachElement.classList.add('show-search');
-  targetBody.style.overflow = 'hidden'; 
-  targetBody.style.paddingRight = '17px'; 
-}
-function hideSearch() {
-  clickableRemoveElementTwo.classList.remove('show'); 
-  targetSerachElement.classList.remove('show-search');
-  targetBody.style.overflow = null;
-  targetBody.style.paddingRight = null;
-}
-if(clickAddElementSearch){
-clickAddElementSearch.addEventListener('click', openSearch);
-}
-targetHideSerach.addEventListener('click', hideSearch);
-
-$(document).ready(function(){
-  $(".menu-btn").click(function() {
-  $(this).toggleClass("on");
-  $("#main-nav").slideToggle();
-  $("#menu-header-menu").css("transition", "all 0.8s");
+  $(document).ready(function(){
+    $(".menu-btn").click(function() {
+    $(this).toggleClass("on");
+    $("#main-nav").slideToggle();
+    $("#menu-header-menu").css("transition", "all 0.8s");
+    });
   });
-});
 
   function addKeydownListener() {
     document.addEventListener('keydown', keydownHandler);
