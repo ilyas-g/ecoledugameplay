@@ -1,0 +1,15 @@
+{
+    "require": {
+        "google/apiclient": "^2.18",
+        "symfony/var-dumper": "^6.4"
+    },
+        "scripts": {
+        "pre-autoload-dump": "Google\\Task\\Composer::cleanup"
+    },
+    "extra": {
+        "google/apiclient-services": [
+            "Drive",
+            "YouTube"
+        ]
+    }
+}
