@@ -68,12 +68,13 @@ $service = new Youtube($client);
 
 $nextPageToken = null;
 $videos = [];
+$idPlaylistYoutube = 'PLBr12FP1TO5i3ubwbkzRxIkYGs2bwHlFP'; // l'id de la playist Youtube
 
 while (!isset($response) || $nextPageToken != null) {
     $response = $service->playlistItems->listPlaylistItems(
         'snippet',
         [
-            'playlistId' => 'PLitZkRNNn1Li7fSY0X54TrP_-PWsipizm',
+            'playlistId' => $idPlaylistYoutube,
             'pageToken' => $nextPageToken,
             'maxResults' => 50,
         ]
@@ -83,26 +84,10 @@ while (!isset($response) || $nextPageToken != null) {
     $videos = array_merge($videos, $response->items);
 }
 
-// dump($videos);
-?>
-
-<?php
-// $video = $response->items[0]->snippet;
-
 // dump($response);
-
-foreach ($videos as $video):
-    $idVideo = "https://www.youtube.com/embed/" . $video->snippet->resourceId->videoId . "?si=0Rb1TylvP0fcLhKs";
 ?>
-    <!-- <iframe
-        width="560"
-        height="315"
-        src=<?php echo $idVideo; ?>
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
 
-<?php endforeach; ?>
-
-<div class="bg-red-test">
+<div class="playlist-container">
     <div id="playlist">
         <div id="video-dis">
             <iframe id="display-frame" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -112,10 +97,10 @@ foreach ($videos as $video):
             <div id="vli-info">
                 <div id="upper-info">
                     <div id="li-titles">
-                        <div class="title">L'émission L'École du Gameplay</div>
+                        <div class="title">L'École du Gameplay - L'émission</div>
                         <div class="sub-title">
-                            <a href="https://www.youtube.com/@mkrza5959" class="channel">MK RZA</a>
-                            -
+                            <!-- <a href="https://www.youtube.com/@mkrza5959" class="channel">MK RZA</a>
+                            - -->
                             <span id="video-count">1 / 2</span>
                         </div>
                     </div>
@@ -132,17 +117,19 @@ foreach ($videos as $video):
 
                 <?php foreach ($videos as $video):
                     $idVideo = "https://www.youtube.com/embed/" . $video->snippet->resourceId->videoId . "?si=0Rb1TylvP0fcLhKs";
-                    $thumbnailVideo = $video->snippet->thumbnails->maxres->url;
+
+
+
                     $titleVideo = $video->snippet->title;
                     $ownerVideo = $video->snippet->videoOwnerChannelTitle;
                     $idChannel = "https://www.youtube.com/channel/" . $video->snippet->channelId;
 
-                    if ($video->snippet->resourceId->videoId !== null && $thumbnailVideo !== null) {
+                    if ($video->snippet->resourceId->videoId !== null) {
                 ?>
                         <div class="video-con active-con" video=<?php echo $idVideo; ?>>
                             <div class="index title">0</div>
                             <div class="thumb">
-                                <img src=<?php echo $thumbnailVideo; ?> alt="">
+                                <img src=<?php echo $video->snippet->thumbnails->standard->url; ?> alt=<?php echo $video->snippet->title; ?>>
                             </div>
                             <div class="v-titles">
                                 <div class="title"><?php echo $titleVideo; ?></div>
