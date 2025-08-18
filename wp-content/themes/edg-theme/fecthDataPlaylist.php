@@ -145,4 +145,6 @@ while (!isset($response) || $nextPageToken != null) {
 
         </div>
     </div>
+
+    <h2 class="playlist-message">Émission tous les Mercredis à 12H sur <a href="https://www.twitch.tv/mk_rza" target="_blank">la chaine Twitch de RZA</a> !</h2>
 </div>

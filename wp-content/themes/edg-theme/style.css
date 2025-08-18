@@ -222,14 +222,6 @@ input[type="reset"]:hover, input[type="button"]:hover, input[type="submit"]:hove
 
 /* color: #1e1601; */
 
-
-.playlist-container {
-   background-image: url('https://image.noelshack.com/fichiers/2025/34/1/1755541171-edg-playlist-bg.jpg');
-   background-size: cover;
-   padding: 50px;
-   margin: 0 0 50px;
-}
-
 .site-footer .widget-area {
    background-color: #1b181e;
    color: #ffffff;

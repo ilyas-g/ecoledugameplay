@@ -45,13 +45,23 @@ a.channel:hover {
 #playlist {
   /* top: 140%;
   left: 50%; */
+
+
   width: 60vw;
   height: 45.45vh;
+
+
+
   display: flex;
   /* position: absolute; */
   /* transform: translate(-50%, -50%); */
   transition: all ease 0.3s;
   margin: 50px auto;
+
+
+  /* width: 100vw;
+    height: auto;
+    transform: none; */
 }
 
 #video-dis {
@@ -167,18 +177,18 @@ a.channel:hover {
 
 @media only screen and (max-width: 1150px) {
   #playlist {
-    width: 95vw;
+    width: 100vw;
     height: 60vh;
   }
 }
 @media only screen and (max-width: 950px) {
   #playlist {
-    top: 10%;
+    /* top: 10%; */
     width: 50vw;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     display: block;
     align-items: center;
-    transform: translate(-50%, 0%);
+    /* transform: translate(-50%, 0%); */
   }
   #video-dis {
     margin-bottom: var(--YTPb-pad);
@@ -188,11 +198,57 @@ a.channel:hover {
 }
 @media only screen and (max-width: 800px) {
   #playlist {
-    width: 60vw;
+    width: 100vw;
+    height: inherit;
   }
 }
 @media only screen and (max-width: 650px) {
   #playlist {
-    width: 80vw;
+    width: 100vw;
+    height: auto;
+    transform: none;
   }
+}
+
+/* @media only screen and (min-width: 1200px) {
+  #playlist {
+    width: 90vw;
+    height: 44vh;
+  }
+}
+
+
+@media only screen and (min-width: 1440px) {
+  #playlist {
+    width: 100vw;
+    height: 57vh;
+  }
+} */
+
+.playlist-container {
+   background-image: url('https://image.noelshack.com/fichiers/2025/34/1/1755541171-edg-playlist-bg.jpg');
+   background-size: cover;
+   padding: 50px;
+   margin: 0 0 50px;
+}
+
+@media only screen and (max-width: 800px) {
+  .playlist-container {
+    padding: 50px 0;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .playlist-container {
+    padding: 50px 0;
+  }
+}
+
+.playlist-message {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.playlist-message a:hover {
+  color: #f8c234;
 }
