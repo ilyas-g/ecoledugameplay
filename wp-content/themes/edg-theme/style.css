@@ -228,8 +228,6 @@ input[type="reset"]:hover, input[type="button"]:hover, input[type="submit"]:hove
 
 }
 
-/* color: #1e1601; */
-
 .site-footer .widget-area {
    background-color: #1b181e;
    color: #ffffff;
@@ -248,8 +246,9 @@ input[type="reset"]:hover, input[type="button"]:hover, input[type="submit"]:hove
    text-align: center;
    position: absolute;
    top: 0;
-   right: 0;
-   left: 0;
+   left: 50%;
+   -ms-transform: translateX(-50%);
+   transform: translateX(-50%);
 }
 
 .mobile-logo .custom-logo {
