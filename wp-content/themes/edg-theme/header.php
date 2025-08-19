@@ -158,7 +158,7 @@
                                 <?php } ?>
                                 <!-- <p>difhrgjfbdk</p> -->
                                 <a href="https://www.patreon.com/MK_RZA" target="_blank" class="patreon">
-                                    <img src="wp-content/themes/edg-theme/patreon_logo.png" alt="Patreon" class="patreon-logo" />
+                                    <img src="http://lecoledugameplay.fr/wp-content/uploads/2025/08/patreon-logo.png" alt="Patreon" class="patreon-logo" />
                                 </a>
                                 <span class="search-toggle"></span>
                             </div><!-- .nav-search -->

@@ -1,8 +1,0 @@
-# BEGIN SEOKEY Robots.txt file : DO NOT EDIT our rules
-# No content has been added to this file: search engines should be able to crawl all public URLs found on your website
-# To prevent Search Engines to index some of your contents, robots.txt is not a good solution: you should remove all links to these URLs AND add a noindex tag
-User-agent: *
-
-Sitemap: http://localhost/ecoleDuGampelay/wp-content/uploads/seokey/sitemaps/sitemap-index-FRA.xml
-
-# END SEOKEY Robots.txt file (add your custom rules below)

@@ -18,3 +18,10 @@ function edg_theme_style()
 /**
  * Your code goes below.
  */
+
+function change_my_title($title)
+{
+	if ($title == "Archives: Projects") $title = "Viewing All Offices";
+	return $title;
+}
+add_filter("get_the_archive_title", "change_my_title");
