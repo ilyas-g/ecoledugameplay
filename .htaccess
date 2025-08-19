@@ -13,4 +13,12 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /ecoleDuGampelay/index.php [L]
 </IfModule>
 
+# BEGIN SEOKEY
+<IfModule mod_headers.c>
+<files sitemap*.xml>
+Header set X-Robots-Tag "noindex,follow"
+</files>
+</IfModule>
+# END SEOKEY
+
 # END WordPress
