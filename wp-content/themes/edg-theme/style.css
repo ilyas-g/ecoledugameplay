@@ -184,7 +184,20 @@ input[type="reset"]:hover, input[type="button"]:hover, input[type="submit"]:hove
 }
 
 .navbar .custom-logo {
-   max-width: 80px;
+   display: none;
+}
+
+@media only screen and (min-width: 992px) {
+   .navbar .custom-logo {
+      display: block;
+      max-width: 80px;
+   }
+}
+
+@media only screen and (max-width: 992px) {
+   .navbar-brand {
+      display: none;
+   }
 }
 
 .post-wrap .post-img-wrap .entry-meta.category-meta {
@@ -215,10 +228,6 @@ input[type="reset"]:hover, input[type="button"]:hover, input[type="submit"]:hove
 
 }
 
-.main-navigation.nav-uppercase ul li a:hover {
-   color: #d5d5d5;
-}
-
 /* color: #1e1601; */
 
 .site-footer .widget-area {
@@ -233,4 +242,24 @@ input[type="reset"]:hover, input[type="button"]:hover, input[type="submit"]:hove
 
 .page-header, .page-header .page-title {
    overflow: hidden;
+}
+
+.mobile-logo {
+   text-align: center;
+   position: absolute;
+   top: 0;
+   right: 0;
+   left: 0;
+}
+
+.mobile-logo .custom-logo {
+   display: block;
+   width: 55px;
+   margin: auto;
+}
+
+@media only screen and (min-width: 992px) {
+   .mobile-logo {
+      display: none;
+   }
 }

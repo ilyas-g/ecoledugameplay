@@ -73,6 +73,26 @@
                     <div class="navigation-bar-top">
                         <div class="container">
                             <button class="navbar-toggler menu-toggle" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'newscard'); ?>"></button>
+
+
+                            <div class="mobile-logo">
+                                <?php
+                                the_custom_logo();
+                                if (is_page_template('templates/front-page-template.php') || is_home()) :
+                                ?>
+                                    <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
+                                <?php
+                                else :
+                                ?>
+                                    <h2 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h2>
+                                <?php
+                                endif;
+                                $newscard_description = get_bloginfo('description', 'display');
+                                if ($newscard_description || is_customize_preview()) :
+                                ?>
+                                    <p class="site-description"><?php echo $newscard_description; /* WPCS: xss ok. */ ?></p>
+                                <?php endif; ?>
+                            </div>
                             <span class="search-toggle"></span>
                         </div><!-- .container -->
                         <div class="search-bar">
