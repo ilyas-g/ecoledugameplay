@@ -19,9 +19,21 @@ function edg_theme_style()
  * Your code goes below.
  */
 
+add_action('get_the_archive_title', 'change_my_title');
+
 function change_my_title($title)
 {
-	if ($title == "Archives: Projects") $title = "Viewing All Offices";
+	if ($title == "Catégorie : ") $title = "Viewing All Offices";
 	return $title;
 }
-add_filter("get_the_archive_title", "change_my_title");
+// add_filter("get_the_archive_title", "change_my_title");
+
+function change_archive_page_title($title)
+{
+	if (is_category()) {
+		$title = single_cat_title('', false);
+	}
+	return $title;
+}
+
+add_filter('get_the_archive_title', 'change_archive_page_title');
