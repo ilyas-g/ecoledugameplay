@@ -41,8 +41,6 @@ a, a:hover {
 @media screen and (min-width: 992px) {
    .navbar .nav-search {
       display: flex;
-      /* justify-content: center; */
-      /* align-items: center; */
    }
 }
 
@@ -62,7 +60,6 @@ a, a:hover {
 
 .nav-search .social-profiles ul li a:hover, .nav-search .social-profiles ul li:hover > a {
     color: #d5d5d5;
-    /* background-color: rgba(0, 0, 0, 0.15); */
 }
 
 
@@ -70,12 +67,6 @@ a, a:hover {
     content: "";
     padding-top: 60%;
     display: block;
-
-    /* position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; */
     background-color: rgba(0, 0, 0, 0.15);
 }
 
@@ -142,11 +133,11 @@ input[type="reset"]:hover, input[type="button"]:hover, input[type="submit"]:hove
 }
 
 .navigation.post-navigation .nav-links a:hover {
-   color: #d5d5d5;
+   color: #1e1601;
 }
 
-.comment-metadata a.comment-edit-link {
-   color: #f8c234
+.comment-metadata a.comment-edit-link, .logged-in-as a {
+   color: #db9f00
 }
 
 .btn-theme {
@@ -172,7 +163,6 @@ input[type="reset"]:hover, input[type="button"]:hover, input[type="submit"]:hove
 }
 
 .entry-meta a:hover, .entry-meta a:focus {
-   /* color: #d5d5d5; */
    color: #1e1601;
 }
 
@@ -208,16 +198,8 @@ input[type="reset"]:hover, input[type="button"]:hover, input[type="submit"]:hove
 
 .site-content, .featured-section {
    padding-top: 100px;
-   /* padding-top: 0; */
-}
 
-/* .cat-links {
-   display: none;
 }
-
-.entry-meta .category-meta {
-   display: none;
-} */
 
 .site-main .type-page {
    background-color: #f2f3f5;
@@ -265,7 +247,7 @@ input[type="reset"]:hover, input[type="button"]:hover, input[type="submit"]:hove
 }
 
 .wps-widget--team .wps-team--member-title a, .wps-widget--team .wps-team--member-title {
-   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
    font-weight: 600;
 }
 
@@ -288,3 +270,5 @@ div.heateor_sss_follow_ul a, div.heateor_sss_horizontal_sharing div.heateor_sss_
    height: 1.5rem !important;
    margin-left: .3125rem
 }
+
+

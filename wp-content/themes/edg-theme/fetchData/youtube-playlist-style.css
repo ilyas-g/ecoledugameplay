@@ -43,30 +43,15 @@ a.channel:hover {
 }
 
 #playlist {
-  /* top: 140%;
-  left: 50%; */
-
-
   width: 60vw;
   height: 45.45vh;
-
-
-
   display: flex;
-  /* position: absolute; */
-  /* transform: translate(-50%, -50%); */
   transition: all ease 0.3s;
   margin: 50px auto;
-
-
-  /* width: 100vw;
-    height: auto;
-    transform: none; */
 }
 
 #video-dis {
   flex: 6.5;
-  /* margin-right: 20px; */
   background: black;
 }
 #video-dis iframe {
@@ -77,7 +62,6 @@ a.channel:hover {
   flex: 3.5;
   display: flex;
   padding: var(--YTPb-pad);
-  /* border-radius: 3px; */
   flex-direction: column;
   background: var(--YTPprimary);
 }
@@ -86,7 +70,6 @@ a.channel:hover {
   height: 40px;
 }
 #vli-info {
-  /* flex: 3; */
   padding: 0 var(--YTPb-pad) 0 var(--YTPb-pad);
 }
 
@@ -183,12 +166,9 @@ a.channel:hover {
 }
 @media only screen and (max-width: 950px) {
   #playlist {
-    /* top: 10%; */
     width: 50vw;
-    /* margin: 0 auto; */
     display: block;
     align-items: center;
-    /* transform: translate(-50%, 0%); */
   }
   #video-dis {
     margin-bottom: var(--YTPb-pad);
@@ -210,20 +190,6 @@ a.channel:hover {
   }
 }
 
-/* @media only screen and (min-width: 1200px) {
-  #playlist {
-    width: 90vw;
-    height: 44vh;
-  }
-}
-
-
-@media only screen and (min-width: 1440px) {
-  #playlist {
-    width: 100vw;
-    height: 57vh;
-  }
-} */
 
 .playlist-container {
    background-image: url('https://image.noelshack.com/fichiers/2025/34/1/1755541171-edg-playlist-bg.jpg');
