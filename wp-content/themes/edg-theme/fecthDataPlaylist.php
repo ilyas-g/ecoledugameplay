@@ -33,10 +33,20 @@ while (!isset($response) || $nextPageToken != null) {
     $videos = array_merge($videos, $response->items);
 }
 
-// dump($response);
 ?>
 
+
 <div class="playlist-container">
+
+
+    <?php
+
+    $newscard_description = get_bloginfo('description', 'display');
+    if ($newscard_description || is_customize_preview()) :
+    ?>
+        <h2 class="site-description"><?php echo $newscard_description; /* WPCS: xss ok. */ ?></h2>
+    <?php endif; ?>
+
     <div id="playlist">
         <div id="video-dis">
             <iframe id="display-frame" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -48,18 +58,10 @@ while (!isset($response) || $nextPageToken != null) {
                     <div id="li-titles">
                         <div class="title">L'École du Gameplay - L'émission</div>
                         <div class="sub-title">
-                            <!-- <a href="https://www.youtube.com/@mkrza5959" class="channel">MK RZA</a>
-                            - -->
                             <span id="video-count">1 / 2</span>
                         </div>
                     </div>
-                    <!-- <div id="drop-icon"></div> -->
                 </div>
-                <!-- <div id="lower-info">
-                <div id="btn-repeat"></div>
-                <div id="btn-suffle"></div>
-                <div id="btn-save"></div>
-            </div> -->
             </div>
 
             <div id="vli-videos">
@@ -92,6 +94,11 @@ while (!isset($response) || $nextPageToken != null) {
 
         </div>
     </div>
+
+
+
+
+
 
     <h2 class="playlist-message">Émission tous les Mercredis à 12H sur <a href="https://www.twitch.tv/mk_rza" target="_blank">la chaîne Twitch de RZA</a> !</h2>
 </div>

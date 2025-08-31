@@ -272,3 +272,10 @@ div.heateor_sss_follow_ul a, div.heateor_sss_horizontal_sharing div.heateor_sss_
 }
 
 
+.site-branding.navbar-brand .site-title, .site-branding.navbar-brand .site-description {
+   display: none;
+}
+
+.site-description {
+   font-size: 2rem;
+}
