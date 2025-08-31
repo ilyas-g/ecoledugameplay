@@ -195,7 +195,7 @@ a.channel:hover {
    background-image: url('https://image.noelshack.com/fichiers/2025/34/1/1755541171-edg-playlist-bg.jpg');
    background-size: cover;
    padding: 50px;
-   margin: -100px 0 50px;
+   margin: -50px 0 50px;
 }
 
 @media only screen and (max-width: 800px) {

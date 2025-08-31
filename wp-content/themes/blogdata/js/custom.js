@@ -226,7 +226,8 @@
   let targetHideSerach = document.querySelector('[bs-dismiss-search]'); 
 
   // Function to handle the click event
-  function openSearch() { 
+  function openSearch(event) { 
+    event.preventDefault();
     clickableRemoveElementTwo.classList.add('show');
     targetSerachElement.classList.add('show-search');
     targetBody.style.overflow = 'hidden'; 

@@ -15,6 +15,7 @@
 
 get_header(); ?>
 <div id="content" class="site-content<?php echo esc_attr(should_output_pt0()); ?>">
+
 	<?php include __DIR__ . '/fecthDataPlaylist.php'; ?>
 	<div class="container">
 		<div class="row justify-content-center site-content-row<?php echo (is_page_template('templates/front-page-template.php')) ? ' gutter-14' : ''; ?>">
