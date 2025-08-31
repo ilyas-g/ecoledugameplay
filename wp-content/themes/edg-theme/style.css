@@ -276,6 +276,21 @@ div.heateor_sss_follow_ul a, div.heateor_sss_horizontal_sharing div.heateor_sss_
    display: none;
 }
 
+@media (max-width: 767px) {
+   .mobile-logo .site-title, .mobile-logo .site-description {
+      display: none;
+   }
+}
+
 .site-description {
+   font-size: 1.5rem;
+   padding: 0 15px;
+   text-align: center;
+}
+
+@media (min-width: 768px) {
+   .site-description {
    font-size: 2rem;
+   padding: 0;
+   }
 }
